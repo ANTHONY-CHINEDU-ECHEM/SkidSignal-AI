@@ -1,0 +1,110 @@
+# SkidSignal AI configuration. Every threshold used by the pipeline lives here so
+# that a change in surveillance policy is a reviewed change to one file.
+project:
+  name: SkidSignal AI
+  version: 1.0.0
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  index: data/index
+  reports: reports
+  figures: docs/images
+  knowledge: knowledge
+  taxonomy: config/abs_taxonomy.yaml
+
+# Official NHTSA Office of Defects Investigation flat files.
+# Catalogue page: https://www.nhtsa.gov/nhtsa-datasets-and-apis
+sources:
+  base_url: https://static.nhtsa.gov/odi/ffdd
+  complaints:
+    - cmpl/COMPLAINTS_RECEIVED_2020-2024.zip
+    - cmpl/COMPLAINTS_RECEIVED_2025-2026.zip
+  complaints_history:            # optional, adds 1995 to 2019 (about 245 MB zipped)
+    - cmpl/COMPLAINTS_RECEIVED_1995-1999.zip
+    - cmpl/COMPLAINTS_RECEIVED_2000-2004.zip
+    - cmpl/COMPLAINTS_RECEIVED_2005-2009.zip
+    - cmpl/COMPLAINTS_RECEIVED_2010-2014.zip
+    - cmpl/COMPLAINTS_RECEIVED_2015-2019.zip
+  recall_documents:
+    - rcl/RCL_FROM_2020_2024.zip
+    - rcl/RCL_FROM_2025_2026.zip
+  recalls_flat:                  # exact recall dates, component names, units affected
+    - rcl/FLAT_RCL_POST_2010.zip
+  investigations:
+    - inv/FLAT_INV.zip
+  communications:
+    - tsbs/TSBS_RECEIVED_2020-2024.zip
+    - tsbs/TSBS_RECEIVED_2025-2026.zip
+
+corpus:
+  min_narrative_chars: 40
+  chunk_chars: 1200
+  chunk_overlap: 150
+  recall_summaries_per_campaign: 3
+  abs_recall_min_share: 0.25     # share of a campaign's documents that must mention ABS
+
+signals:
+  window_months: 24              # trailing window for disproportionality
+  recent_months: 6               # surge window
+  min_history_months: 12         # earliest as-of date needs this much data
+  min_cases: 5                   # minimum ABS complaints in the window
+  min_recent_cases: 5            # minimum ABS complaints in the recent window for the surge channel
+  prr_threshold: 2.0             # Evans criteria: PRR >= 2, chi square >= 4, n >= 3
+  chi2_threshold: 4.0
+  ic025_threshold: 0.0           # lower 95 percent credibility bound of the information component
+  surge_fdr: 0.05                # Benjamini Hochberg false discovery rate for the surge test
+  cusum_k: 0.5
+  cusum_h: 4.0
+  score_weights:                 # transparent, documented, not learned
+    disproportionality: 0.35
+    surge: 0.30
+    severity: 0.20
+    volume: 0.15
+  baseline_volume_thresholds: [3, 5, 8, 10]   # naive comparator: N ABS complaints in the recent window
+
+backtest:
+  recall_horizon_months: 24      # an alert "precedes" a recall if the recall lands inside this horizon
+  evaluate_recalls_from: "2021-01-01"
+
+retrieval:
+  embedding_backend: lsa         # lsa (offline, fitted on the corpus) or sentence_transformers
+  sentence_transformer_model: sentence-transformers/all-MiniLM-L6-v2
+  lsa_dim: 256
+  bm25_k1: 1.5
+  bm25_b: 0.75
+  rrf_k: 60
+  rrf_weight_bm25: 1.0           # fusion weights selected on the development split of the
+  rrf_weight_dense: 0.0          # retrieval benchmark for the lsa backend; retune per backend
+  candidate_k: 100
+  top_k: 10
+  mmr_lambda: 0.75               # 1.0 disables diversification
+  reranker: none                 # none or cross_encoder
+  cross_encoder_model: cross-encoder/ms-marco-MiniLM-L-6-v2
+
+clustering:
+  k_candidates: [6, 8, 10, 12, 14]
+  sample_for_silhouette: 4000
+  random_state: 7
+
+llm:
+  provider: extractive           # extractive (no network, deterministic) or anthropic
+  model: claude-sonnet-5-5
+  max_tokens: 1400
+  temperature: 0.0
+  max_repair_attempts: 1
+
+guardrails:
+  min_citation_coverage: 0.9
+  overstatement_terms:
+    - proves
+    - proven
+    - confirmed defect
+    - definitely
+    - certainly
+    - guaranteed
+    - without doubt
+    - undeniable
+    - conclusively
+    - must be recalled
+    - is defective

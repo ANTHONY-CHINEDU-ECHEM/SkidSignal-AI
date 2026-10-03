@@ -1,0 +1,70 @@
+# Lexicon that decides (1) which complaints count as ABS related events and
+# (2) which failure modes a narrative describes. Patterns are case insensitive
+# regular expressions. The taxonomy is deliberately small, readable and auditable.
+
+abs_core_patterns:
+  - '\b(ABS|ANTI[\s-]?LOCK|ANTILOCK)\b'
+  - 'HYDRAULIC\s+(ELECTRONIC\s+)?CONTROL\s+UNIT'
+  - '\b(HECU|EBCM)\b'
+  - 'WHEEL\s+SPEED\s+SENSOR'
+
+abs_component_patterns:
+  - 'ANTILOCK'
+
+brake_domain_component_patterns:
+  - 'SERVICE BRAKES'
+  - 'ELECTRONIC STABILITY CONTROL'
+  - 'PARKING BRAKE'
+  - 'TRACTION CONTROL'
+
+failure_modes:
+  warning_lamp:
+    label: ABS or brake warning lamp illuminated
+    patterns:
+      - '\b(ABS|ANTI[\s-]?LOCK)\b.{0,40}\b(LIGHT|LAMP|WARNING|INDICATOR|TELLTALE)S?\b'
+      - '\b(LIGHT|LAMP|WARNING|INDICATOR)S?\b.{0,40}\b(ABS|ANTI[\s-]?LOCK)\b'
+  module_or_hydraulic_unit:
+    label: ABS module, pump or hydraulic control unit failure
+    patterns:
+      - '\b(ABS|ANTI[\s-]?LOCK)\s+(BRAKE\s+)?(CONTROL\s+)?(MODULE|PUMP|UNIT|MOTOR|ACTUATOR|MODULATOR)\b'
+      - 'HYDRAULIC\s+(ELECTRONIC\s+)?CONTROL\s+UNIT'
+      - '\b(HECU|HCU|EBCM)\b'
+  wheel_speed_sensor:
+    label: Wheel speed sensor, tone ring or wiring fault
+    patterns:
+      - 'WHEEL\s+SPEED\s+SENSOR'
+      - '\bSPEED\s+SENSORS?\b'
+      - 'TONE\s+RING|RELUCTOR'
+  unintended_activation:
+    label: ABS activation without demand or abnormal pedal pulsation
+    patterns:
+      - '\b(ABS|ANTI[\s-]?LOCK)\b.{0,60}\b(ACTIVAT|ENGAG|KICK|PULSAT|TRIGGER)\w*'
+      - '\b(PULSAT|GRIND|VIBRAT|SHUDDER)\w*.{0,40}\bPEDAL\b'
+      - '\bPEDAL\b.{0,40}\b(PULSAT|GRIND|VIBRAT|SHUDDER)\w*'
+  loss_of_braking:
+    label: Loss of braking or extended stopping distance
+    patterns:
+      - 'BRAKES?\s+(FAIL\w*|WENT\s+OUT|DID\s+NOT\s+\w+|WOULD\s+NOT\s+\w+|WOULDN.?T\s+\w+|STOPPED\s+WORKING|GAVE\s+OUT)'
+      - 'NO\s+BRAKES|LOSS\s+OF\s+BRAK\w+|LOST\s+(ALL\s+)?BRAK\w+'
+      - 'PEDAL\s+(WENT|GOES|SINKS?|SANK|DROPPED|FELL)\s+(ALL\s+THE\s+WAY\s+)?TO\s+THE\s+FLOOR'
+      - 'EXTENDED\s+STOPPING|STOPPING\s+DISTANCE|UNABLE\s+TO\s+STOP|COULD\s+NOT\s+STOP|COULDN.?T\s+STOP'
+  thermal_event:
+    label: Fire, smoke, melting or overheating
+    patterns:
+      - '\b(FIRE|FLAMES?|SMOK\w+|BURN\w*|MELT\w*|OVERHEAT\w*)\b'
+  electrical_or_software:
+    label: Electrical short, wiring, fuse, corrosion or software
+    patterns:
+      - 'SHORT\s+CIRCUIT|ELECTRICAL\s+SHORT|\bSHORTED\b'
+      - '\b(WIRING|HARNESS|FUSE|CONNECTOR|CORRO\w+|SOFTWARE|REPROGRAM\w*|FIRMWARE)\b'
+  stability_traction_coupling:
+    label: Stability or traction control affected together with ABS
+    patterns:
+      - 'TRACTION\s+CONTROL|STABILITY\s+CONTROL'
+      - '\b(ESC|VSC|TCS|ESP)\b'
+  remedy_unavailable:
+    label: Repair part unavailable or on back order
+    patterns:
+      - 'BACK\s*ORDER\w*'
+      - 'PARTS?\s+(ARE\s+|IS\s+)?(NOT\s+|UN)AVAILABLE|NO\s+PARTS?\b'
+      - 'WAITING\s+(FOR|ON)\s+(THE\s+|A\s+)?PARTS?'
