@@ -1,0 +1,203 @@
+{
+  "months_replayed": [
+    "2020-12",
+    "2026-01"
+  ],
+  "recall_file_ends": "2024-12",
+  "recall_dates_exact": false,
+  "abs_vehicle_recalls_total": 38,
+  "abs_vehicle_recalls_evaluated": 27,
+  "abs_vehicle_recalls_detectable": 11,
+  "horizon_months": 24,
+  "rules": {
+    "skidsignal": {
+      "all_abs_recalls": {
+        "recalls": 27,
+        "detected": 8,
+        "sensitivity": 0.296,
+        "median_lead_months": 12.5
+      },
+      "detectable_abs_recalls": {
+        "recalls": 11,
+        "detected": 8,
+        "sensitivity": 0.727,
+        "median_lead_months": 12.5
+      },
+      "vehicles_ever_alerted": 100,
+      "new_alerts_per_month": 1.61,
+      "mean_active_alerts_per_month": 29.7,
+      "alert_outcomes_all": {
+        "recall_followed": 11,
+        "prior_recall": 10,
+        "no_abs_recall_on_file": 79
+      },
+      "alert_outcomes_full_horizon": {
+        "recall_followed": 11,
+        "prior_recall": 2,
+        "no_abs_recall_on_file": 46
+      }
+    },
+    "surge_channel": {
+      "all_abs_recalls": {
+        "recalls": 27,
+        "detected": 7,
+        "sensitivity": 0.259,
+        "median_lead_months": 7.0
+      },
+      "detectable_abs_recalls": {
+        "recalls": 11,
+        "detected": 7,
+        "sensitivity": 0.636,
+        "median_lead_months": 7.0
+      },
+      "vehicles_ever_alerted": 63,
+      "new_alerts_per_month": 1.02,
+      "mean_active_alerts_per_month": 5.8,
+      "alert_outcomes_all": {
+        "recall_followed": 8,
+        "prior_recall": 9,
+        "no_abs_recall_on_file": 46
+      },
+      "alert_outcomes_full_horizon": {
+        "recall_followed": 8,
+        "prior_recall": 0,
+        "no_abs_recall_on_file": 18
+      }
+    },
+    "disproportionality_channel": {
+      "all_abs_recalls": {
+        "recalls": 27,
+        "detected": 4,
+        "sensitivity": 0.148,
+        "median_lead_months": 14.5
+      },
+      "detectable_abs_recalls": {
+        "recalls": 11,
+        "detected": 4,
+        "sensitivity": 0.364,
+        "median_lead_months": 14.5
+      },
+      "vehicles_ever_alerted": 66,
+      "new_alerts_per_month": 1.06,
+      "mean_active_alerts_per_month": 26.5,
+      "alert_outcomes_all": {
+        "recall_followed": 6,
+        "prior_recall": 8,
+        "no_abs_recall_on_file": 52
+      },
+      "alert_outcomes_full_horizon": {
+        "recall_followed": 6,
+        "prior_recall": 2,
+        "no_abs_recall_on_file": 36
+      }
+    },
+    "volume_rule_3": {
+      "all_abs_recalls": {
+        "recalls": 27,
+        "detected": 11,
+        "sensitivity": 0.407,
+        "median_lead_months": 12.0
+      },
+      "detectable_abs_recalls": {
+        "recalls": 11,
+        "detected": 10,
+        "sensitivity": 0.909,
+        "median_lead_months": 12.5
+      },
+      "vehicles_ever_alerted": 184,
+      "new_alerts_per_month": 2.97,
+      "mean_active_alerts_per_month": 61.6,
+      "alert_outcomes_all": {
+        "recall_followed": 14,
+        "prior_recall": 10,
+        "no_abs_recall_on_file": 160
+      },
+      "alert_outcomes_full_horizon": {
+        "recall_followed": 14,
+        "prior_recall": 3,
+        "no_abs_recall_on_file": 101
+      }
+    },
+    "volume_rule_5": {
+      "all_abs_recalls": {
+        "recalls": 27,
+        "detected": 8,
+        "sensitivity": 0.296,
+        "median_lead_months": 10.5
+      },
+      "detectable_abs_recalls": {
+        "recalls": 11,
+        "detected": 8,
+        "sensitivity": 0.727,
+        "median_lead_months": 10.5
+      },
+      "vehicles_ever_alerted": 103,
+      "new_alerts_per_month": 1.66,
+      "mean_active_alerts_per_month": 35.0,
+      "alert_outcomes_all": {
+        "recall_followed": 11,
+        "prior_recall": 9,
+        "no_abs_recall_on_file": 83
+      },
+      "alert_outcomes_full_horizon": {
+        "recall_followed": 11,
+        "prior_recall": 3,
+        "no_abs_recall_on_file": 56
+      }
+    },
+    "volume_rule_8": {
+      "all_abs_recalls": {
+        "recalls": 27,
+        "detected": 8,
+        "sensitivity": 0.296,
+        "median_lead_months": 9.5
+      },
+      "detectable_abs_recalls": {
+        "recalls": 11,
+        "detected": 8,
+        "sensitivity": 0.727,
+        "median_lead_months": 9.5
+      },
+      "vehicles_ever_alerted": 59,
+      "new_alerts_per_month": 0.95,
+      "mean_active_alerts_per_month": 21.1,
+      "alert_outcomes_all": {
+        "recall_followed": 9,
+        "prior_recall": 8,
+        "no_abs_recall_on_file": 42
+      },
+      "alert_outcomes_full_horizon": {
+        "recall_followed": 9,
+        "prior_recall": 1,
+        "no_abs_recall_on_file": 29
+      }
+    },
+    "volume_rule_10": {
+      "all_abs_recalls": {
+        "recalls": 27,
+        "detected": 8,
+        "sensitivity": 0.296,
+        "median_lead_months": 9.0
+      },
+      "detectable_abs_recalls": {
+        "recalls": 11,
+        "detected": 8,
+        "sensitivity": 0.727,
+        "median_lead_months": 9.0
+      },
+      "vehicles_ever_alerted": 45,
+      "new_alerts_per_month": 0.73,
+      "mean_active_alerts_per_month": 15.8,
+      "alert_outcomes_all": {
+        "recall_followed": 8,
+        "prior_recall": 6,
+        "no_abs_recall_on_file": 31
+      },
+      "alert_outcomes_full_horizon": {
+        "recall_followed": 7,
+        "prior_recall": 0,
+        "no_abs_recall_on_file": 25
+      }
+    }
+  }
+}

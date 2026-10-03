@@ -1,0 +1,11 @@
+{
+  "briefs": 27,
+  "writer": "extractive",
+  "clean_pass_rate": 1.0,
+  "mutation_detection_rate": {
+    "fabricated_citation": 1.0,
+    "altered_number": 1.0,
+    "overstatement": 1.0,
+    "citations_removed": 1.0
+  }
+}

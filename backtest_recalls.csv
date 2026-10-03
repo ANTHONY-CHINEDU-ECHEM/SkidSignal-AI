@@ -1,0 +1,39 @@
+campno,recall_month,date_is_exact,makes,families_in_panel,abs_complaints_before,skidsignal_detected,skidsignal_lead_months,surge_channel_detected,surge_channel_lead_months,disproportionality_channel_detected,disproportionality_channel_lead_months,volume_rule_3_detected,volume_rule_3_lead_months,volume_rule_5_detected,volume_rule_5_lead_months,volume_rule_8_detected,volume_rule_8_lead_months,volume_rule_10_detected,volume_rule_10_lead_months
+20V055,2020-01,False,CHEVROLET | GMC,2,0,False,,False,,False,,False,,False,,False,,False,
+20V061,2020-01,False,HYUNDAI,4,0,False,,False,,False,,False,,False,,False,,False,
+20V195,2020-03,False,CHEVROLET | ISUZU,1,0,False,,False,,False,,False,,False,,False,,False,
+20V255,2020-04,False,INTERNATIONAL,2,0,False,,False,,False,,False,,False,,False,,False,
+20V285,2020-05,False,INTERNATIONAL,1,0,False,,False,,False,,False,,False,,False,,False,
+20V303,2020-05,False,THOR MOTOR COACH,5,0,False,,False,,False,,False,,False,,False,,False,
+20V319,2020-05,False,INTERNATIONAL MOTORS,0,0,False,,False,,False,,False,,False,,False,,False,
+20V520,2020-08,False,HYUNDAI,1,1,False,,False,,False,,False,,False,,False,,False,
+20V543,2020-08,False,HYUNDAI,1,2,False,,False,,False,,False,,False,,False,,False,
+21V160,2021-02,False,GENESIS | HYUNDAI,2,4,False,,False,,False,,False,,False,,False,,False,
+21V161,2021-03,False,GENESIS,1,2,False,,False,,False,,False,,False,,False,,False,
+21V303,2021-04,False,HYUNDAI,1,4,False,,False,,False,,True,2.0,False,,False,,False,
+21V331,2021-05,False,KIA,2,43,True,5.0,True,5.0,False,,True,5.0,True,5.0,True,5.0,True,5.0
+21V578,2021-07,False,CHEVROLET | GMC,2,5,False,,False,,False,,True,5.0,False,,False,,False,
+21V579,2021-07,False,CHEVROLET | GMC,2,19,True,4.0,True,4.0,False,,True,7.0,True,6.0,True,4.0,True,3.0
+21V690,2021-09,False,HONDA,1,0,False,,False,,False,,False,,False,,False,,False,
+21V985,2021-12,False,CHEVROLET | GMC,2,121,True,12.0,False,,True,12.0,True,12.0,True,12.0,True,12.0,True,12.0
+22V051,2022-01,False,KIA,2,6,False,,False,,False,,True,9.0,False,,False,,False,
+22V056,2022-01,False,HYUNDAI,4,114,True,13.0,True,13.0,True,13.0,True,13.0,True,13.0,True,13.0,True,13.0
+22V456,2022-06,False,FREIGHTLINER,1,4,False,,False,,False,,False,,False,,False,,False,
+22V800,2022-11,False,KIA,1,20,True,3.0,True,3.0,False,,True,19.0,True,7.0,True,3.0,True,3.0
+22V810,2022-11,False,HYUNDAI,1,25,True,16.0,True,7.0,True,16.0,True,21.0,True,9.0,True,7.0,True,6.0
+23V017,2023-01,False,CHEVROLET | HINO | ISUZU,1,0,False,,False,,False,,False,,False,,False,,False,
+23V220,2023-03,False,INTERNATIONAL,2,0,False,,False,,False,,False,,False,,False,,False,
+23V370,2023-05,False,IC BUS | INTERNATIONAL,7,1,False,,False,,False,,False,,False,,False,,False,
+23V371,2023-05,False,IC BUS,1,0,False,,False,,False,,False,,False,,False,,False,
+23V651,2023-09,False,HYUNDAI,12,277,True,33.0,True,33.0,True,33.0,True,33.0,True,33.0,True,33.0,True,33.0
+23V652,2023-09,False,KIA,12,173,True,33.0,True,33.0,False,,True,33.0,True,33.0,True,33.0,True,33.0
+23V779,2023-11,False,CFMOTO,1,0,False,,False,,False,,False,,False,,False,,False,
+24V021,2024-01,False,LODE KING,0,0,False,,False,,False,,False,,False,,False,,False,
+24V589,2024-08,False,CADILLAC,1,1,False,,False,,False,,False,,False,,False,,False,
+24V601,2024-08,False,LIVEWIRE,1,0,False,,False,,False,,False,,False,,False,,False,
+24V614,2024-08,False,ACURA,1,0,False,,False,,False,,False,,False,,False,,False,
+24V777,2024-10,False,FORD,1,2,False,,False,,False,,False,,False,,False,,False,
+24V790,2024-10,False,VOLVO,2,0,False,,False,,False,,False,,False,,False,,False,
+24V792,2024-10,False,MACK,2,0,False,,False,,False,,False,,False,,False,,False,
+24V833,2024-11,False,KAWASAKI,0,0,False,,False,,False,,False,,False,,False,,False,
+24V915,2024-12,False,KENWORTH | PETERBILT,12,7,False,,False,,False,,False,,False,,False,,False,

@@ -1,0 +1,7 @@
+cluster,size,share,top_terms,severe_share,fire_share,top_vehicles,examples
+3,3089,0.2517,"car, steering, engine, power, sensor, wheel, power steering, came",0.0651,0.0078,"HONDA ACCORD, JEEP WRANGLER, CHEVROLET SILVERADO 1500","C:11406102, C:11679110, C:11433306"
+4,2562,0.2087,"control, truck, cruise, traction control, traction, cruise control, ram, hcu",0.0066,0.0,"RAM 2500, RAM 3500, RAM 1500","C:11531379, C:11559854, C:11534718"
+5,2397,0.1953,"contact, contact stated, stated, failure, manufacturer, owns, failure mileage, contact owns",0.0676,0.0196,"RAM 2500, FORD FUSION, RAM 3500","C:11546664, C:11500298, C:11712697"
+0,2227,0.1814,"car, floor, ford, recall, stop, pedal, hyundai, brakes",0.1001,0.0319,"FORD FUSION, HYUNDAI PALISADE, FORD EDGE","C:11450381, C:11427822, C:11525260"
+1,1203,0.098,"module, abs module, part, control module, jeep, abs control, module failed, honda",0.0158,0.0025,"RAM 1500, JEEP WRANGLER, HONDA ACCORD","C:11638583, C:11712147, C:11683730"
+2,796,0.0649,"toyota, prius, booster, actuator, brake, brake booster, c1391, car",0.0239,0.0,"TOYOTA PRIUS, TOYOTA PRIUS V, TOYOTA HIGHLANDER","C:11554031, C:11493054, C:11689732"

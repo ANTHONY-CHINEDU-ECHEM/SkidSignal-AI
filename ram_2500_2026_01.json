@@ -1,0 +1,360 @@
+{
+  "vehicle": "RAM 2500",
+  "as_of": "2026-01",
+  "writer": "extractive",
+  "markdown": "# SkidSignal brief: RAM 2500\n\n| As of | Tier | Priority score | Rank among flagged families | Writer | Guardrails |\n|---|---|---|---|---|---|\n| 2026-01 | persistent | 51.0 | 3 of 27 | extractive | passed |\n\n## 1. Signal summary\n\nRAM 2500 is on the persistent tier as of 2026-01 with a priority score of 51.0, rank 3 of 27 flagged families [S]. Between 2024-02 and 2026-01, 1,002 of its 1,550 complaints were ABS related, a share of 64.6 percent against 3.6 percent across all vehicles [S]. The proportional reporting ratio is 22.00 with a 95 percent interval of 20.98 to 23.08, and the lower credibility bound of the information component (IC025) is 4.06 [S]. The most recent 6 months brought 194 ABS complaints against 285.9 expected from the earlier rate, a rate ratio of 0.68, which does not meet the surge criterion (q 1.0000) [S].\n\n## 2. Statistical evidence\n\nWindow: 2024-02 to 2026-01 (24 months). All figures are computed by the signal engine.\n\n| Metric | Value | How to read it |\n|---|---|---|\n| ABS related complaints | 1,002 of 1,550 (64.6%) | Database wide share is 3.6% |\n| Expected ABS complaints | 56.1 | If this family matched the database mix |\n| Proportional reporting ratio | 22.00 (20.98 to 23.08) | Signal criterion: at least 2 |\n| Reporting odds ratio | 60.40 (54.18 to 67.34) | Interval excluding 1 supports an excess |\n| Chi square | 16,713.7 | Signal criterion: at least 4 |\n| Information component | 4.15 (IC025 4.06) | Signal criterion: IC025 above 0 |\n| Last 6 months | 194 observed, 285.9 expected | Rate ratio 0.68, adjusted q 1.0000 |\n| CUSUM peak | 0.7 | Not in alarm |\n| Severe outcomes | 13 (1.3%) | 13 crash, 0 fire, 1 injured, 0 deaths |\n\n## 3. Failure mode profile\n\nThe most frequent failure mode tag is \"ABS or brake warning lamp illuminated\" (650 narratives, 64.9 percent), followed by \"Stability or traction control affected together with ABS\" (483, 48.2 percent) [S]. Complaints concentrate in model years 2018 (810), 2017 (172), 2016 (6) [S]. An owner report for a 2018 RAM 2500 states: \"The contact owns a 2018 Ram 2500; The contact stated while operating the vehicle, the ABS and Traction Control warning lights continuously flashed off and on or remained\" [C:11575371]. An owner report for a 2018 RAM 2500 states: \"The truck constantly has an ABS Module and Stability control failure/ code turning on and off causing the ABS/ Cruise Control/ Traction control to no longer function\" [C:11573022]. An owner report for a 2018 RAM 2500 states: \"The contact owns a 2018 Ram 2500; The contact stated that while driving at an undisclosed speed, the electronic service system warning light illuminated, and the ABS\" [C:11590583]. Reference note \"Warning lamp illumination\": The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on [K:failure_modes.warning_lamp_illumination].\n\n| Failure mode | Narratives | Share |\n|---|---|---|\n| ABS or brake warning lamp illuminated | 650 | 64.9% |\n| Stability or traction control affected together with ABS | 483 | 48.2% |\n| ABS module, pump or hydraulic control unit failure | 463 | 46.2% |\n| Repair part unavailable or on back order | 172 | 17.2% |\n| Loss of braking or extended stopping distance | 34 | 3.4% |\n| ABS activation without demand or abnormal pedal pulsation | 30 | 3.0% |\n| Fire, smoke, melting or overheating | 7 | 0.7% |\n| Electrical short, wiring, fuse, corrosion or software | 6 | 0.6% |\n| Wheel speed sensor, tone ring or wiring fault | 4 | 0.4% |\n\n## 4. Complaint evidence\n\n- **[C:11575371]** 2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE (received 2024-03-04, retrieved): \"The contact owns a 2018 Ram 2500. The contact stated while operating the vehicle, the ABS and Traction Control warning lights continuously flashed off and on or remained illuminated. Also, during the failure the cruise control became inoperable. The vehicle was taken to the local dealer who determined that the Hydraulic Control Unit was faulty and needed to be replaced but the parts were on back order from the ...\"\n- **[C:11573022]** 2018 RAM 2500 | SERVICE BRAKES | ELECTRICAL SYSTEM (received 2024-02-20, retrieved): \"The truck constantly has an ABS Module and Stability control failure/ code turning on and off causing the ABS/ Cruise Control/ Traction control to no longer function. Research shows that the ABS Module and Hydraulic control unit need to be replaced and programmed by a dealership and parts are nearly impossible to find\"\n- **[C:11590583]** 2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE (received 2024-05-24, retrieved): \"The contact owns a 2018 Ram 2500. The contact stated that while driving at an undisclosed speed, the electronic service system warning light illuminated, and the ABS, and traction control warning lights also illuminated, causing the traction and cruise control to fail. The vehicle was taken to an independent mechanic, where it was diagnosed with electronic braking module failure. The vehicle was repaired. The ...\"\n- **[C:11583518]** 2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE (received 2024-04-17, retrieved): \"The contact owns a 2018 Ram 2500. The contact stated that while driving at an undisclosed speed, the ABS warning light illuminated. The vehicle was taken to the dealer, where it was determined that the ABS software update needed to be performed. The vehicle was repaired; however, the failure reoccurred. The vehicle was taken back to the dealer, where it was diagnosed that the ABS control module had failed. The ...\"\n- **[C:11607377]** 2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC (received 2024-08-08, retrieved): \"The contact owns a 2018 Ram 2500. The contact stated while driving at an undisclosed speed, the ABS and traction control warning lights illuminated. The vehicle was taken to the dealer where it was diagnosed with HECU unit and ABS module failures. The contact was informed that the HECU unit and the ABS module needed to be replaced. The vehicle was not repaired. The contact was informed that the parts to repair the ...\"\n- **[C:11588662]** 2018 RAM 2500 | SERVICE BRAKES, AIR:ANTILOCK:ABS WARNING LIGHT | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE | FORWARD COLLI (received 2024-05-14, retrieved): \"The contact owns a 2018 Ram 2500. The contact stated while driving 55 MPH, an alarm sounded, and the ABS and traction control warning lights illuminated. The contact stated that the failure had been recurring while driving, causing the ABS and the cruise control features to become inoperable. The contact stated while driving and slamming on the brakes on several occasions to come to a complete stop, the ABS was ...\"\n- **[C:11714222]** 2018 RAM 2500 | SERVICE BRAKES, AIR:ANTILOCK:ABS WARNING LIGHT | TRACTION CONTROL SYSTEM | SERVICE BRAKES, HYDRAULIC (received 2026-01-29, severe outcome): \"The contact owns a 2018 Dodge Ram 2500. The contact received a recall letter related to NHTSA Campaign Number: 24V896000 (Service Brakes, Hydraulic). The contact stated that while driving at 20-25, the brakes were applied, but the front wheels locked up and crashed into the rear of a Chevrolet SUV. There were no reported injuries, airbag deployments, or fire. A police report was filed. The steering became ...\"\n- **[C:11711099]** 2018 RAM 2500 | SERVICE BRAKES, AIR:ANTILOCK:ABS WARNING LIGHT | SERVICE BRAKES, HYDRAULIC | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION (received 2026-01-15, severe outcome): \"The contact owns a 2018 Ram 2500. The contact located the recall for NHTSA Campaign Number: 24V896000 (Service brakes, Hydraulic). While driving at 55 MPH, another vehicle passed him on double yellow lines, and the anti-lock brakes locked up, and the vehicle slid and crashed into a 2008 Chevrolet. There were no reported injuries, fire, or airbag deployment. A police report was filed. The ABS light and traction ...\"\n\n## 5. Recalls and context\n\nNo ABS related recall campaign for this family appears in the recall file before the as of date [S]. A brake related campaign for the same make, 21V008, states: \"This is a customer notification letter related to Liquid Spring recall 20E031 and the subsequent Braun Northwest recall 21V008 regarding potential abrasion of the rear flexible brake lines on 2019-20\" [R:21V008].\n\n- **[R:21V008]** Recall 21V008 | RAM | model years 2019 to 2020 (related recall, same make, 2021-01-04): This is a customer notification letter related to Liquid Spring recall 20E031 and the subsequent Braun Northwest recall 21V008 regarding potential abrasion of the rear flexible brake lines on 2019-20 RAM 4500/5500 Chassis cabs with Liquid Spring rear suspension.\n- **[K:failure_modes.warning_lamp_illumination]** Warning lamp illumination (reference note): The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on. On its own this indicates that the system detected a fault and disabled itself. The safety relevance depends on what failed and whether base braking is affected. A sustained rise in lamp complaints for one vehicle family is still valuable because it is usually the ...\n- **[K:abs_fundamentals.main_components]** Main components (reference note): A typical hydraulic ABS has four groups of parts. Wheel speed sensors read a toothed tone ring or magnetic encoder at each wheel. An electronic control unit compares the wheel speeds and estimates slip. A hydraulic control unit, also called the modulator or hydraulic electronic control unit, contains inlet and outlet solenoid valves, a return pump and an electric motor. Finally a warning lamp on the instrument panel ...\n- **[K:surveillance_methods.known_limits_of_complaint_based_surveillance]** Known limits of complaint based surveillance (reference note): Complaints are voluntary and unverified. Reporting rises after news coverage or a recall announcement, which is called stimulated reporting. Vehicles with large fleets generate more complaints of every kind, which disproportionality partly corrects for but volume thresholds do not. A statistical signal is a reason for an engineer to read the evidence. It is not a finding that a defect exists.\n\n## 6. Assessment\n\nABS issues are persistently over represented for this family, but the recent rate is not rising faster than its own history [S]. 13 of the 1,002 ABS complaints involve a crash, fire, injury or death (13 crash, 0 fire, 1 injured, 0 deaths) [S]. 17.2 percent of narratives mention unavailable repair parts, so part of the volume may reflect a known problem awaiting remedy and not a new defect [S]. This is a statistical signal built from unverified owner reports and it does not establish that a defect exists [K:surveillance_methods.known_limits_of_complaint_based_surveillance].\n\n## 7. Recommended analyst actions\n\n1. Read the cited narratives in full and confirm the failure mode coding.\n2. Check manufacturer communications and open investigations for this family, since no ABS recall is on file.\n3. Request a build date breakdown for model years 2018, 2017, 2016.\n4. Review the signal again next month and note whether the tier or score has changed.\n\n## 8. Limitations\n\nComplaints are voluntary, unverified owner reports and reporting rises after publicity or a recall. Disproportionality compares complaint mixes and is not a failure rate, because the number of vehicles in service is not in the data. Signals are computed for a vehicle family across all model years, so a problem confined to one model year can be diluted. The brief only uses records received on or before the as of date.\n\nMonthly ABS complaints in the window: 2024-02: 80, 2024-03: 66, 2024-04: 43, 2024-05: 65, 2024-06: 64, 2024-07: 83, 2024-08: 75, 2024-09: 81, 2024-10: 52, 2024-11: 61, 2024-12: 19, 2025-01: 18, 2025-02: 16, 2025-03: 15, 2025-04: 18, 2025-05: 12, 2025-06: 15, 2025-07: 25, 2025-08: 27, 2025-09: 27, 2025-10: 17, 2025-11: 28, 2025-12: 42, 2026-01: 53\n\nGuardrail checks: citation validity 1.00, citation coverage 1.00, numeric fidelity 1.00. Citation keys: S is a computed statistic, C is an owner complaint (ODI number), R is a recall campaign, K is a project reference note.\n",
+  "narrative": {
+    "summary": "RAM 2500 is on the persistent tier as of 2026-01 with a priority score of 51.0, rank 3 of 27 flagged families [S]. Between 2024-02 and 2026-01, 1,002 of its 1,550 complaints were ABS related, a share of 64.6 percent against 3.6 percent across all vehicles [S]. The proportional reporting ratio is 22.00 with a 95 percent interval of 20.98 to 23.08, and the lower credibility bound of the information component (IC025) is 4.06 [S]. The most recent 6 months brought 194 ABS complaints against 285.9 expected from the earlier rate, a rate ratio of 0.68, which does not meet the surge criterion (q 1.0000) [S].",
+    "failure_modes": "The most frequent failure mode tag is \"ABS or brake warning lamp illuminated\" (650 narratives, 64.9 percent), followed by \"Stability or traction control affected together with ABS\" (483, 48.2 percent) [S]. Complaints concentrate in model years 2018 (810), 2017 (172), 2016 (6) [S]. An owner report for a 2018 RAM 2500 states: \"The contact owns a 2018 Ram 2500; The contact stated while operating the vehicle, the ABS and Traction Control warning lights continuously flashed off and on or remained\" [C:11575371]. An owner report for a 2018 RAM 2500 states: \"The truck constantly has an ABS Module and Stability control failure/ code turning on and off causing the ABS/ Cruise Control/ Traction control to no longer function\" [C:11573022]. An owner report for a 2018 RAM 2500 states: \"The contact owns a 2018 Ram 2500; The contact stated that while driving at an undisclosed speed, the electronic service system warning light illuminated, and the ABS\" [C:11590583]. Reference note \"Warning lamp illumination\": The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on [K:failure_modes.warning_lamp_illumination].",
+    "context": "No ABS related recall campaign for this family appears in the recall file before the as of date [S]. A brake related campaign for the same make, 21V008, states: \"This is a customer notification letter related to Liquid Spring recall 20E031 and the subsequent Braun Northwest recall 21V008 regarding potential abrasion of the rear flexible brake lines on 2019-20\" [R:21V008].",
+    "assessment": "ABS issues are persistently over represented for this family, but the recent rate is not rising faster than its own history [S]. 13 of the 1,002 ABS complaints involve a crash, fire, injury or death (13 crash, 0 fire, 1 injured, 0 deaths) [S]. 17.2 percent of narratives mention unavailable repair parts, so part of the volume may reflect a known problem awaiting remedy and not a new defect [S]. This is a statistical signal built from unverified owner reports and it does not establish that a defect exists [K:surveillance_methods.known_limits_of_complaint_based_surveillance].",
+    "actions": [
+      "Read the cited narratives in full and confirm the failure mode coding.",
+      "Check manufacturer communications and open investigations for this family, since no ABS recall is on file.",
+      "Request a build date breakdown for model years 2018, 2017, 2016.",
+      "Review the signal again next month and note whether the tier or score has changed."
+    ]
+  },
+  "guardrails": {
+    "passed": true,
+    "citation_validity": 1.0,
+    "citation_coverage": 1.0,
+    "numeric_fidelity": 1.0,
+    "invalid_citations": [],
+    "unsupported_numbers": [],
+    "overstatement_hits": [],
+    "issues": []
+  },
+  "evidence": {
+    "vehicle": "RAM 2500",
+    "as_of": "2026-01",
+    "tier": "persistent",
+    "facts": {
+      "vehicle": "RAM 2500",
+      "as_of": "2026-01",
+      "window_start": "2024-02",
+      "window_months": 24,
+      "recent_months": 6,
+      "tier": "persistent",
+      "score": "51.0",
+      "rank": 3,
+      "flagged_total": 27,
+      "abs_complaints": 1002,
+      "all_complaints": 1550,
+      "abs_share_pct": "64.6",
+      "database_share_pct": "3.6",
+      "expected": "56.1",
+      "prr": "22.00",
+      "prr_lo": "20.98",
+      "prr_hi": "23.08",
+      "ror": "60.40",
+      "ror_lo": "54.18",
+      "ror_hi": "67.34",
+      "chi2": "16,713.7",
+      "ic": "4.15",
+      "ic025": "4.06",
+      "ic975": "4.23",
+      "recent_abs": 194,
+      "expected_recent": "285.9",
+      "rate_ratio": "0.68",
+      "surge_q": "1.0000",
+      "cusum_peak": "0.7",
+      "cusum_alarm": false,
+      "disproportionate": true,
+      "surging": false,
+      "severe": 13,
+      "crash": 13,
+      "fire": 0,
+      "injured": 1,
+      "deaths": 0,
+      "severe_share_pct": "1.3",
+      "known_abs_recalls": []
+    },
+    "fact_lines": [
+      "Vehicle family RAM 2500, as of 2026-01, window 2024-02 to 2026-01 (24 months).",
+      "Tier persistent, priority score 51.0, rank 3 of 27 flagged families.",
+      "ABS related complaints in window: 1,002 of 1,550 complaints (64.6 percent). Database wide share: 3.6 percent. Expected count: 56.1.",
+      "PRR 22.00 (95 percent interval 20.98 to 23.08); ROR 60.40 (54.18 to 67.34); chi square 16,713.7.",
+      "Information component 4.15 (IC025 4.06, IC975 4.23).",
+      "Recent 6 months: 194 ABS complaints against 285.9 expected (rate ratio 0.68, adjusted q 1.0000). CUSUM peak 0.7, alarm False.",
+      "Severity among ABS complaints: 13 with crash, fire, injury or death (1.3 percent); 13 crash, 0 fire, 1 injured, 0 deaths.",
+      "Failure modes: ABS or brake warning lamp illuminated 650 (64.9 percent); Stability or traction control affected together with ABS 483 (48.2 percent); ABS module, pump or hydraulic control unit failure 463 (46.2 percent); Repair part unavailable or on back order 172 (17.2 percent); Loss of braking or extended stopping distance 34 (3.4 percent); ABS activation without demand or abnormal pedal pulsation 30 (3.0 percent); Fire, smoke, melting or overheating 7 (0.7 percent); Electrical short, wiring, fuse, corrosion or software 6 (0.6 percent); Wheel speed sensor, tone ring or wiring fault 4 (0.4 percent).",
+      "Model years with most ABS complaints: 2018 (810), 2017 (172), 2016 (6), 2023 (3), 2015 (3).",
+      "ABS related recall campaigns on file for this family before the as of date: none."
+    ],
+    "failure_modes": [
+      {
+        "mode": "warning_lamp",
+        "label": "ABS or brake warning lamp illuminated",
+        "count": 650,
+        "share": 0.6487025948103793
+      },
+      {
+        "mode": "stability_traction_coupling",
+        "label": "Stability or traction control affected together with ABS",
+        "count": 483,
+        "share": 0.4820359281437126
+      },
+      {
+        "mode": "module_or_hydraulic_unit",
+        "label": "ABS module, pump or hydraulic control unit failure",
+        "count": 463,
+        "share": 0.4620758483033932
+      },
+      {
+        "mode": "remedy_unavailable",
+        "label": "Repair part unavailable or on back order",
+        "count": 172,
+        "share": 0.17165668662674652
+      },
+      {
+        "mode": "loss_of_braking",
+        "label": "Loss of braking or extended stopping distance",
+        "count": 34,
+        "share": 0.033932135728542916
+      },
+      {
+        "mode": "unintended_activation",
+        "label": "ABS activation without demand or abnormal pedal pulsation",
+        "count": 30,
+        "share": 0.029940119760479042
+      },
+      {
+        "mode": "thermal_event",
+        "label": "Fire, smoke, melting or overheating",
+        "count": 7,
+        "share": 0.006986027944111776
+      },
+      {
+        "mode": "electrical_or_software",
+        "label": "Electrical short, wiring, fuse, corrosion or software",
+        "count": 6,
+        "share": 0.005988023952095809
+      },
+      {
+        "mode": "wheel_speed_sensor",
+        "label": "Wheel speed sensor, tone ring or wiring fault",
+        "count": 4,
+        "share": 0.003992015968063872
+      }
+    ],
+    "model_years": [
+      [
+        2018,
+        810
+      ],
+      [
+        2017,
+        172
+      ],
+      [
+        2016,
+        6
+      ],
+      [
+        2023,
+        3
+      ],
+      [
+        2015,
+        3
+      ]
+    ],
+    "monthly": [
+      [
+        "2024-02",
+        80
+      ],
+      [
+        "2024-03",
+        66
+      ],
+      [
+        "2024-04",
+        43
+      ],
+      [
+        "2024-05",
+        65
+      ],
+      [
+        "2024-06",
+        64
+      ],
+      [
+        "2024-07",
+        83
+      ],
+      [
+        "2024-08",
+        75
+      ],
+      [
+        "2024-09",
+        81
+      ],
+      [
+        "2024-10",
+        52
+      ],
+      [
+        "2024-11",
+        61
+      ],
+      [
+        "2024-12",
+        19
+      ],
+      [
+        "2025-01",
+        18
+      ],
+      [
+        "2025-02",
+        16
+      ],
+      [
+        "2025-03",
+        15
+      ],
+      [
+        "2025-04",
+        18
+      ],
+      [
+        "2025-05",
+        12
+      ],
+      [
+        "2025-06",
+        15
+      ],
+      [
+        "2025-07",
+        25
+      ],
+      [
+        "2025-08",
+        27
+      ],
+      [
+        "2025-09",
+        27
+      ],
+      [
+        "2025-10",
+        17
+      ],
+      [
+        "2025-11",
+        28
+      ],
+      [
+        "2025-12",
+        42
+      ],
+      [
+        "2026-01",
+        53
+      ]
+    ],
+    "items": [
+      {
+        "cite": "C:11575371",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE",
+        "text": "The contact owns a 2018 Ram 2500. The contact stated while operating the vehicle, the ABS and Traction Control warning lights continuously flashed off and on or remained illuminated. Also, during the failure the cruise control became inoperable. The vehicle was taken to the local dealer who determined that the Hydraulic Control Unit was faulty and needed to be replaced but the parts were on back order from the ...",
+        "date": "2024-03-04",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11573022",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES | ELECTRICAL SYSTEM",
+        "text": "The truck constantly has an ABS Module and Stability control failure/ code turning on and off causing the ABS/ Cruise Control/ Traction control to no longer function. Research shows that the ABS Module and Hydraulic control unit need to be replaced and programmed by a dealership and parts are nearly impossible to find",
+        "date": "2024-02-20",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11590583",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE",
+        "text": "The contact owns a 2018 Ram 2500. The contact stated that while driving at an undisclosed speed, the electronic service system warning light illuminated, and the ABS, and traction control warning lights also illuminated, causing the traction and cruise control to fail. The vehicle was taken to an independent mechanic, where it was diagnosed with electronic braking module failure. The vehicle was repaired. The ...",
+        "date": "2024-05-24",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11583518",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE",
+        "text": "The contact owns a 2018 Ram 2500. The contact stated that while driving at an undisclosed speed, the ABS warning light illuminated. The vehicle was taken to the dealer, where it was determined that the ABS software update needed to be performed. The vehicle was repaired; however, the failure reoccurred. The vehicle was taken back to the dealer, where it was diagnosed that the ABS control module had failed. The ...",
+        "date": "2024-04-17",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11607377",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES, HYDRAULIC",
+        "text": "The contact owns a 2018 Ram 2500. The contact stated while driving at an undisclosed speed, the ABS and traction control warning lights illuminated. The vehicle was taken to the dealer where it was diagnosed with HECU unit and ABS module failures. The contact was informed that the HECU unit and the ABS module needed to be replaced. The vehicle was not repaired. The contact was informed that the parts to repair the ...",
+        "date": "2024-08-08",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11588662",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES, AIR:ANTILOCK:ABS WARNING LIGHT | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE | FORWARD COLLI",
+        "text": "The contact owns a 2018 Ram 2500. The contact stated while driving 55 MPH, an alarm sounded, and the ABS and traction control warning lights illuminated. The contact stated that the failure had been recurring while driving, causing the ABS and the cruise control features to become inoperable. The contact stated while driving and slamming on the brakes on several occasions to come to a complete stop, the ABS was ...",
+        "date": "2024-05-14",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11714222",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES, AIR:ANTILOCK:ABS WARNING LIGHT | TRACTION CONTROL SYSTEM | SERVICE BRAKES, HYDRAULIC",
+        "text": "The contact owns a 2018 Dodge Ram 2500. The contact received a recall letter related to NHTSA Campaign Number: 24V896000 (Service Brakes, Hydraulic). The contact stated that while driving at 20-25, the brakes were applied, but the front wheels locked up and crashed into the rear of a Chevrolet SUV. There were no reported injuries, airbag deployments, or fire. A police report was filed. The steering became ...",
+        "date": "2026-01-29",
+        "role": "severe outcome"
+      },
+      {
+        "cite": "C:11711099",
+        "source": "complaint",
+        "title": "2018 RAM 2500 | SERVICE BRAKES, AIR:ANTILOCK:ABS WARNING LIGHT | SERVICE BRAKES, HYDRAULIC | SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION",
+        "text": "The contact owns a 2018 Ram 2500. The contact located the recall for NHTSA Campaign Number: 24V896000 (Service brakes, Hydraulic). While driving at 55 MPH, another vehicle passed him on double yellow lines, and the anti-lock brakes locked up, and the vehicle slid and crashed into a 2008 Chevrolet. There were no reported injuries, fire, or airbag deployment. A police report was filed. The ABS light and traction ...",
+        "date": "2026-01-15",
+        "role": "severe outcome"
+      },
+      {
+        "cite": "R:21V008",
+        "source": "recall",
+        "title": "Recall 21V008 | RAM | model years 2019 to 2020",
+        "text": "This is a customer notification letter related to Liquid Spring recall 20E031 and the subsequent Braun Northwest recall 21V008 regarding potential abrasion of the rear flexible brake lines on 2019-20 RAM 4500/5500 Chassis cabs with Liquid Spring rear suspension.",
+        "date": "2021-01-04",
+        "role": "related recall, same make"
+      },
+      {
+        "cite": "K:failure_modes.warning_lamp_illumination",
+        "source": "reference",
+        "title": "Warning lamp illumination",
+        "text": "The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on. On its own this indicates that the system detected a fault and disabled itself. The safety relevance depends on what failed and whether base braking is affected. A sustained rise in lamp complaints for one vehicle family is still valuable because it is usually the ...",
+        "date": null,
+        "role": "reference note"
+      },
+      {
+        "cite": "K:abs_fundamentals.main_components",
+        "source": "reference",
+        "title": "Main components",
+        "text": "A typical hydraulic ABS has four groups of parts. Wheel speed sensors read a toothed tone ring or magnetic encoder at each wheel. An electronic control unit compares the wheel speeds and estimates slip. A hydraulic control unit, also called the modulator or hydraulic electronic control unit, contains inlet and outlet solenoid valves, a return pump and an electric motor. Finally a warning lamp on the instrument panel ...",
+        "date": null,
+        "role": "reference note"
+      },
+      {
+        "cite": "K:surveillance_methods.known_limits_of_complaint_based_surveillance",
+        "source": "reference",
+        "title": "Known limits of complaint based surveillance",
+        "text": "Complaints are voluntary and unverified. Reporting rises after news coverage or a recall announcement, which is called stimulated reporting. Vehicles with large fleets generate more complaints of every kind, which disproportionality partly corrects for but volume thresholds do not. A statistical signal is a reason for an engineer to read the evidence. It is not a finding that a defect exists.",
+        "date": null,
+        "role": "reference note"
+      }
+    ]
+  }
+}

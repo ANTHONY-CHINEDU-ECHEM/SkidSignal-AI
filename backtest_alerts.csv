@@ -1,0 +1,621 @@
+rule,vehicle,first_alert_month,outcome,full_horizon_observed
+skidsignal,AUDI A6,2023-05,no_abs_recall_on_file,False
+skidsignal,CADILLAC SRX,2022-02,no_abs_recall_on_file,True
+skidsignal,CAN-AM RYKER,2022-10,no_abs_recall_on_file,True
+skidsignal,CHEVROLET COLORADO,2024-08,no_abs_recall_on_file,False
+skidsignal,CHEVROLET EQUINOX,2025-05,no_abs_recall_on_file,False
+skidsignal,CHEVROLET EXPRESS,2023-08,no_abs_recall_on_file,False
+skidsignal,CHEVROLET IMPALA,2020-12,no_abs_recall_on_file,True
+skidsignal,CHEVROLET MALIBU,2026-01,no_abs_recall_on_file,False
+skidsignal,CHEVROLET SILVERADO 1500,2020-12,recall_followed,True
+skidsignal,CHEVROLET TAHOE,2021-03,recall_followed,True
+skidsignal,CHEVROLET TRAVERSE,2025-07,no_abs_recall_on_file,False
+skidsignal,CHEVROLET TRAX,2023-02,no_abs_recall_on_file,False
+skidsignal,CHRYSLER PACIFICA,2024-02,no_abs_recall_on_file,False
+skidsignal,DODGE DURANGO,2022-10,no_abs_recall_on_file,True
+skidsignal,DODGE JOURNEY,2020-12,no_abs_recall_on_file,True
+skidsignal,FISKER OCEAN,2024-05,no_abs_recall_on_file,False
+skidsignal,FORD EDGE,2020-12,no_abs_recall_on_file,True
+skidsignal,FORD EXPLORER,2025-05,no_abs_recall_on_file,False
+skidsignal,FORD F-150,2024-07,no_abs_recall_on_file,False
+skidsignal,FORD FUSION,2020-12,no_abs_recall_on_file,True
+skidsignal,FORD FUSION HYBRID,2021-08,no_abs_recall_on_file,True
+skidsignal,FORD MAVERICK HYBRID,2024-04,no_abs_recall_on_file,False
+skidsignal,FORD RANGER,2025-07,no_abs_recall_on_file,False
+skidsignal,FORD TRANSIT CONNECT,2022-11,no_abs_recall_on_file,True
+skidsignal,GENESIS G80,2022-11,prior_recall,True
+skidsignal,GMC ACADIA,2025-07,no_abs_recall_on_file,False
+skidsignal,GMC SIERRA 1500,2020-12,recall_followed,True
+skidsignal,HARLEY-DAVIDSON FLHTCU,2022-03,no_abs_recall_on_file,True
+skidsignal,HARLEY-DAVIDSON FLHTK,2020-12,no_abs_recall_on_file,True
+skidsignal,HARLEY-DAVIDSON FLHX,2022-10,no_abs_recall_on_file,True
+skidsignal,HONDA ACCORD,2023-08,no_abs_recall_on_file,False
+skidsignal,HONDA CIVIC,2023-07,no_abs_recall_on_file,False
+skidsignal,HONDA CR-V,2022-02,no_abs_recall_on_file,True
+skidsignal,HONDA CROSSTOUR,2024-05,no_abs_recall_on_file,False
+skidsignal,HONDA ODYSSEY,2025-08,no_abs_recall_on_file,False
+skidsignal,HONDA PILOT,2022-02,no_abs_recall_on_file,True
+skidsignal,HYUNDAI ACCENT,2023-12,prior_recall,False
+skidsignal,HYUNDAI AZERA,2021-04,no_abs_recall_on_file,True
+skidsignal,HYUNDAI ELANTRA,2023-12,prior_recall,False
+skidsignal,HYUNDAI GENESIS,2021-02,prior_recall,True
+skidsignal,HYUNDAI GENESIS COUPE,2022-07,recall_followed,True
+skidsignal,HYUNDAI PALISADE,2024-06,no_abs_recall_on_file,False
+skidsignal,HYUNDAI SANTA FE,2020-12,recall_followed,True
+skidsignal,HYUNDAI SANTA FE SPORT,2021-07,recall_followed,True
+skidsignal,HYUNDAI TUCSON,2020-12,recall_followed,True
+skidsignal,HYUNDAI VELOSTER,2024-01,prior_recall,False
+skidsignal,HYUNDAI VERACRUZ,2022-05,recall_followed,True
+skidsignal,INFINITI QX60,2020-12,no_abs_recall_on_file,True
+skidsignal,JEEP CHEROKEE,2025-08,no_abs_recall_on_file,False
+skidsignal,JEEP COMMANDER,2026-01,no_abs_recall_on_file,False
+skidsignal,JEEP GLADIATOR,2023-10,no_abs_recall_on_file,False
+skidsignal,JEEP GRAND CHEROKEE,2022-12,no_abs_recall_on_file,True
+skidsignal,JEEP GRAND CHEROKEE L,2025-08,no_abs_recall_on_file,False
+skidsignal,JEEP WRANGLER,2022-05,no_abs_recall_on_file,True
+skidsignal,KIA CADENZA,2024-03,prior_recall,False
+skidsignal,KIA FORTE,2024-01,prior_recall,False
+skidsignal,KIA OPTIMA,2020-12,recall_followed,True
+skidsignal,KIA OPTIMA HYBRID,2025-03,prior_recall,False
+skidsignal,KIA RIO,2024-01,prior_recall,False
+skidsignal,KIA SEDONA,2024-07,no_abs_recall_on_file,False
+skidsignal,KIA SORENTO,2021-01,recall_followed,True
+skidsignal,KIA SOUL,2024-03,prior_recall,False
+skidsignal,KIA SPORTAGE,2022-08,recall_followed,True
+skidsignal,KIA TELLURIDE,2023-06,no_abs_recall_on_file,False
+skidsignal,LEXUS CT,2024-01,no_abs_recall_on_file,False
+skidsignal,LEXUS HS 250 HYBRID,2023-02,no_abs_recall_on_file,False
+skidsignal,LEXUS LS,2021-01,no_abs_recall_on_file,True
+skidsignal,LEXUS RX,2020-12,no_abs_recall_on_file,True
+skidsignal,LEXUS RX HYBRID,2021-11,no_abs_recall_on_file,True
+skidsignal,LINCOLN MKX,2020-12,no_abs_recall_on_file,True
+skidsignal,LINCOLN MKZ,2020-12,no_abs_recall_on_file,True
+skidsignal,MAZDA MAZDA3,2021-08,no_abs_recall_on_file,True
+skidsignal,MERCEDES BENZ SPRINTER 3500,2021-02,no_abs_recall_on_file,True
+skidsignal,MERCEDES-BENZ SPRINTER 2500,2020-12,no_abs_recall_on_file,True
+skidsignal,MERCEDES-BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+skidsignal,MERCURY MARINER,2020-12,no_abs_recall_on_file,True
+skidsignal,MERCURY MILAN,2020-12,no_abs_recall_on_file,True
+skidsignal,NEWMAR BAY STAR,2022-04,no_abs_recall_on_file,True
+skidsignal,NISSAN FRONTIER,2023-01,no_abs_recall_on_file,False
+skidsignal,NISSAN KICKS,2025-03,no_abs_recall_on_file,False
+skidsignal,NISSAN LEAF,2022-08,no_abs_recall_on_file,True
+skidsignal,NISSAN MURANO,2020-12,no_abs_recall_on_file,True
+skidsignal,PONTIAC GRAND PRIX,2021-05,no_abs_recall_on_file,True
+skidsignal,RAM 1500,2021-01,no_abs_recall_on_file,True
+skidsignal,RAM 2500,2020-12,no_abs_recall_on_file,True
+skidsignal,RAM 3500,2022-04,no_abs_recall_on_file,True
+skidsignal,RAM 5500,2023-04,no_abs_recall_on_file,False
+skidsignal,SUBARU IMPREZA,2021-10,no_abs_recall_on_file,True
+skidsignal,TESLA MODEL 3,2022-04,no_abs_recall_on_file,True
+skidsignal,TOYOTA HIGHLANDER,2020-12,no_abs_recall_on_file,True
+skidsignal,TOYOTA PRIUS,2020-12,no_abs_recall_on_file,True
+skidsignal,TOYOTA PRIUS C,2024-08,no_abs_recall_on_file,False
+skidsignal,TOYOTA PRIUS PLUG-IN HYBRID,2023-12,no_abs_recall_on_file,False
+skidsignal,TOYOTA PRIUS V,2020-12,no_abs_recall_on_file,True
+skidsignal,TOYOTA SEQUOIA,2020-12,no_abs_recall_on_file,True
+skidsignal,TOYOTA SIENNA,2020-12,no_abs_recall_on_file,True
+skidsignal,VOLKSWAGEN ATLAS,2022-06,no_abs_recall_on_file,True
+skidsignal,VOLKSWAGEN EOS,2021-01,no_abs_recall_on_file,True
+skidsignal,VOLKSWAGEN JETTA,2020-12,no_abs_recall_on_file,True
+skidsignal,WINNEBAGO ADVENTURER,2023-05,no_abs_recall_on_file,False
+surge_channel,AUDI A6,2023-05,no_abs_recall_on_file,False
+surge_channel,CADILLAC SRX,2022-02,no_abs_recall_on_file,True
+surge_channel,CHEVROLET COLORADO,2024-08,no_abs_recall_on_file,False
+surge_channel,CHEVROLET EQUINOX,2025-05,no_abs_recall_on_file,False
+surge_channel,CHEVROLET EXPRESS,2024-04,no_abs_recall_on_file,False
+surge_channel,CHEVROLET MALIBU,2026-01,no_abs_recall_on_file,False
+surge_channel,CHEVROLET TAHOE,2021-03,recall_followed,True
+surge_channel,CHEVROLET TRAVERSE,2025-07,no_abs_recall_on_file,False
+surge_channel,CHEVROLET TRAX,2023-02,no_abs_recall_on_file,False
+surge_channel,CHRYSLER PACIFICA,2024-02,no_abs_recall_on_file,False
+surge_channel,DODGE DURANGO,2022-10,no_abs_recall_on_file,True
+surge_channel,FISKER OCEAN,2024-05,no_abs_recall_on_file,False
+surge_channel,FORD EDGE,2025-09,no_abs_recall_on_file,False
+surge_channel,FORD EXPLORER,2025-05,no_abs_recall_on_file,False
+surge_channel,FORD F-150,2024-07,no_abs_recall_on_file,False
+surge_channel,FORD MAVERICK HYBRID,2024-04,no_abs_recall_on_file,False
+surge_channel,FORD RANGER,2025-07,no_abs_recall_on_file,False
+surge_channel,FORD TRANSIT CONNECT,2022-11,no_abs_recall_on_file,True
+surge_channel,GMC ACADIA,2025-07,no_abs_recall_on_file,False
+surge_channel,HONDA ACCORD,2023-08,no_abs_recall_on_file,False
+surge_channel,HONDA CIVIC,2023-07,no_abs_recall_on_file,False
+surge_channel,HONDA CR-V,2022-02,no_abs_recall_on_file,True
+surge_channel,HONDA ODYSSEY,2025-08,no_abs_recall_on_file,False
+surge_channel,HONDA PILOT,2022-02,no_abs_recall_on_file,True
+surge_channel,HYUNDAI ACCENT,2024-02,prior_recall,False
+surge_channel,HYUNDAI AZERA,2024-03,prior_recall,False
+surge_channel,HYUNDAI ELANTRA,2023-12,prior_recall,False
+surge_channel,HYUNDAI GENESIS,2024-03,prior_recall,False
+surge_channel,HYUNDAI PALISADE,2024-06,no_abs_recall_on_file,False
+surge_channel,HYUNDAI SANTA FE,2020-12,recall_followed,True
+surge_channel,HYUNDAI SANTA FE SPORT,2022-04,recall_followed,True
+surge_channel,HYUNDAI TUCSON,2020-12,recall_followed,True
+surge_channel,HYUNDAI VELOSTER,2024-01,prior_recall,False
+surge_channel,HYUNDAI VERACRUZ,2022-05,recall_followed,True
+surge_channel,JEEP CHEROKEE,2025-08,no_abs_recall_on_file,False
+surge_channel,JEEP GLADIATOR,2023-10,no_abs_recall_on_file,False
+surge_channel,JEEP GRAND CHEROKEE,2022-12,no_abs_recall_on_file,True
+surge_channel,JEEP GRAND CHEROKEE L,2025-08,no_abs_recall_on_file,False
+surge_channel,JEEP WRANGLER,2022-05,no_abs_recall_on_file,True
+surge_channel,KIA CADENZA,2024-03,prior_recall,False
+surge_channel,KIA FORTE,2024-01,prior_recall,False
+surge_channel,KIA OPTIMA,2020-12,recall_followed,True
+surge_channel,KIA RIO,2024-01,prior_recall,False
+surge_channel,KIA SEDONA,2024-07,no_abs_recall_on_file,False
+surge_channel,KIA SORENTO,2021-01,recall_followed,True
+surge_channel,KIA SOUL,2024-03,prior_recall,False
+surge_channel,KIA SPORTAGE,2022-08,recall_followed,True
+surge_channel,KIA TELLURIDE,2023-06,no_abs_recall_on_file,False
+surge_channel,LEXUS CT,2024-02,no_abs_recall_on_file,False
+surge_channel,LEXUS LS,2024-09,no_abs_recall_on_file,False
+surge_channel,MERCEDES-BENZ SPRINTER 2500,2020-12,no_abs_recall_on_file,True
+surge_channel,MERCEDES-BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+surge_channel,NISSAN FRONTIER,2023-01,no_abs_recall_on_file,False
+surge_channel,NISSAN KICKS,2025-03,no_abs_recall_on_file,False
+surge_channel,RAM 1500,2021-01,no_abs_recall_on_file,True
+surge_channel,RAM 2500,2021-09,no_abs_recall_on_file,True
+surge_channel,RAM 3500,2022-04,no_abs_recall_on_file,True
+surge_channel,SUBARU IMPREZA,2021-10,no_abs_recall_on_file,True
+surge_channel,TESLA MODEL 3,2022-04,no_abs_recall_on_file,True
+surge_channel,TOYOTA PRIUS,2022-06,no_abs_recall_on_file,True
+surge_channel,TOYOTA PRIUS V,2022-06,no_abs_recall_on_file,True
+surge_channel,VOLKSWAGEN ATLAS,2022-06,no_abs_recall_on_file,True
+surge_channel,VOLKSWAGEN EOS,2021-01,no_abs_recall_on_file,True
+disproportionality_channel,CADILLAC SRX,2025-09,no_abs_recall_on_file,False
+disproportionality_channel,CAN-AM RYKER,2022-10,no_abs_recall_on_file,True
+disproportionality_channel,CHEVROLET EXPRESS,2023-08,no_abs_recall_on_file,False
+disproportionality_channel,CHEVROLET IMPALA,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,CHEVROLET SILVERADO 1500,2020-12,recall_followed,True
+disproportionality_channel,DODGE JOURNEY,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,FORD EDGE,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,FORD FUSION,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,FORD FUSION HYBRID,2021-08,no_abs_recall_on_file,True
+disproportionality_channel,FORD TRANSIT CONNECT,2022-12,no_abs_recall_on_file,True
+disproportionality_channel,GENESIS G80,2022-11,prior_recall,True
+disproportionality_channel,GMC SIERRA 1500,2020-12,recall_followed,True
+disproportionality_channel,HARLEY-DAVIDSON FLHTCU,2022-03,no_abs_recall_on_file,True
+disproportionality_channel,HARLEY-DAVIDSON FLHTK,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,HARLEY-DAVIDSON FLHX,2022-10,no_abs_recall_on_file,True
+disproportionality_channel,HONDA ACCORD,2023-09,no_abs_recall_on_file,False
+disproportionality_channel,HONDA CROSSTOUR,2024-05,no_abs_recall_on_file,False
+disproportionality_channel,HYUNDAI ACCENT,2023-12,prior_recall,False
+disproportionality_channel,HYUNDAI AZERA,2021-04,no_abs_recall_on_file,True
+disproportionality_channel,HYUNDAI GENESIS,2021-02,prior_recall,True
+disproportionality_channel,HYUNDAI GENESIS COUPE,2022-07,recall_followed,True
+disproportionality_channel,HYUNDAI PALISADE,2024-09,no_abs_recall_on_file,False
+disproportionality_channel,HYUNDAI SANTA FE,2020-12,recall_followed,True
+disproportionality_channel,HYUNDAI SANTA FE SPORT,2021-07,recall_followed,True
+disproportionality_channel,HYUNDAI TUCSON,2020-12,recall_followed,True
+disproportionality_channel,HYUNDAI VELOSTER,2025-06,prior_recall,False
+disproportionality_channel,HYUNDAI VERACRUZ,2023-12,prior_recall,False
+disproportionality_channel,INFINITI QX60,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,JEEP COMMANDER,2026-01,no_abs_recall_on_file,False
+disproportionality_channel,JEEP WRANGLER,2025-04,no_abs_recall_on_file,False
+disproportionality_channel,KIA CADENZA,2025-09,prior_recall,False
+disproportionality_channel,KIA OPTIMA HYBRID,2025-03,prior_recall,False
+disproportionality_channel,KIA RIO,2025-07,prior_recall,False
+disproportionality_channel,LEXUS CT,2024-01,no_abs_recall_on_file,False
+disproportionality_channel,LEXUS HS 250 HYBRID,2023-02,no_abs_recall_on_file,False
+disproportionality_channel,LEXUS LS,2021-01,no_abs_recall_on_file,True
+disproportionality_channel,LEXUS RX,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,LEXUS RX HYBRID,2021-11,no_abs_recall_on_file,True
+disproportionality_channel,LINCOLN MKX,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,LINCOLN MKZ,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,MAZDA MAZDA3,2021-08,no_abs_recall_on_file,True
+disproportionality_channel,MERCEDES BENZ SPRINTER 3500,2021-02,no_abs_recall_on_file,True
+disproportionality_channel,MERCEDES-BENZ SPRINTER 2500,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,MERCEDES-BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,MERCURY MARINER,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,MERCURY MILAN,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,NEWMAR BAY STAR,2022-04,no_abs_recall_on_file,True
+disproportionality_channel,NISSAN FRONTIER,2023-01,no_abs_recall_on_file,False
+disproportionality_channel,NISSAN KICKS,2025-03,no_abs_recall_on_file,False
+disproportionality_channel,NISSAN LEAF,2022-08,no_abs_recall_on_file,True
+disproportionality_channel,NISSAN MURANO,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,PONTIAC GRAND PRIX,2021-05,no_abs_recall_on_file,True
+disproportionality_channel,RAM 1500,2024-12,no_abs_recall_on_file,False
+disproportionality_channel,RAM 2500,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,RAM 3500,2022-04,no_abs_recall_on_file,True
+disproportionality_channel,RAM 5500,2023-04,no_abs_recall_on_file,False
+disproportionality_channel,TOYOTA HIGHLANDER,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,TOYOTA PRIUS,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,TOYOTA PRIUS C,2024-08,no_abs_recall_on_file,False
+disproportionality_channel,TOYOTA PRIUS PLUG-IN HYBRID,2023-12,no_abs_recall_on_file,False
+disproportionality_channel,TOYOTA PRIUS V,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,TOYOTA SEQUOIA,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,TOYOTA SIENNA,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,VOLKSWAGEN EOS,2021-01,no_abs_recall_on_file,True
+disproportionality_channel,VOLKSWAGEN JETTA,2020-12,no_abs_recall_on_file,True
+disproportionality_channel,WINNEBAGO ADVENTURER,2023-05,no_abs_recall_on_file,False
+volume_rule_3,ACURA MDX,2025-06,no_abs_recall_on_file,False
+volume_rule_3,ALFA ROMEO STELVIO,2025-06,no_abs_recall_on_file,False
+volume_rule_3,AUDI A6,2023-02,no_abs_recall_on_file,False
+volume_rule_3,BMW X1,2024-08,no_abs_recall_on_file,False
+volume_rule_3,BMW X5,2024-11,no_abs_recall_on_file,False
+volume_rule_3,BUICK ENCLAVE,2023-04,no_abs_recall_on_file,False
+volume_rule_3,BUICK LACROSSE,2023-10,no_abs_recall_on_file,False
+volume_rule_3,CADILLAC SRX,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CADILLAC XT4,2025-06,no_abs_recall_on_file,False
+volume_rule_3,CAN-AM RYKER,2022-05,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET COBALT,2023-08,no_abs_recall_on_file,False
+volume_rule_3,CHEVROLET COLORADO,2022-08,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET CORVETTE,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET CRUZE,2021-01,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET EQUINOX,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET EQUINOX EV,2025-08,no_abs_recall_on_file,False
+volume_rule_3,CHEVROLET EXPRESS,2023-08,no_abs_recall_on_file,False
+volume_rule_3,CHEVROLET IMPALA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET MALIBU,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET SILVERADO 1500,2020-12,recall_followed,True
+volume_rule_3,CHEVROLET SILVERADO 2500,2021-02,recall_followed,True
+volume_rule_3,CHEVROLET SUBURBAN,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET TAHOE,2020-12,recall_followed,True
+volume_rule_3,CHEVROLET TRAVERSE,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHEVROLET TRAX,2023-01,no_abs_recall_on_file,False
+volume_rule_3,CHEVROLET VOLT,2022-07,no_abs_recall_on_file,True
+volume_rule_3,CHRYSLER 200,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHRYSLER 300,2020-12,no_abs_recall_on_file,True
+volume_rule_3,CHRYSLER PACIFICA,2023-10,no_abs_recall_on_file,False
+volume_rule_3,CHRYSLER PACIFICA PLUG-IN HYBRID,2025-02,no_abs_recall_on_file,False
+volume_rule_3,CHRYSLER TOWN AND COUNTRY,2021-03,no_abs_recall_on_file,True
+volume_rule_3,DODGE CALIBER,2021-01,no_abs_recall_on_file,True
+volume_rule_3,DODGE CHALLENGER,2021-09,no_abs_recall_on_file,True
+volume_rule_3,DODGE CHARGER,2020-12,no_abs_recall_on_file,True
+volume_rule_3,DODGE DART,2023-07,no_abs_recall_on_file,False
+volume_rule_3,DODGE DURANGO,2020-12,no_abs_recall_on_file,True
+volume_rule_3,DODGE GRAND CARAVAN,2020-12,no_abs_recall_on_file,True
+volume_rule_3,DODGE JOURNEY,2020-12,no_abs_recall_on_file,True
+volume_rule_3,DODGE RAM 1500,2023-01,no_abs_recall_on_file,False
+volume_rule_3,FISKER OCEAN,2024-01,no_abs_recall_on_file,False
+volume_rule_3,FORD BRONCO,2025-01,no_abs_recall_on_file,False
+volume_rule_3,FORD BRONCO SPORT,2023-03,no_abs_recall_on_file,False
+volume_rule_3,FORD EDGE,2020-12,no_abs_recall_on_file,True
+volume_rule_3,FORD ESCAPE,2020-12,no_abs_recall_on_file,True
+volume_rule_3,FORD EXPEDITION,2020-12,no_abs_recall_on_file,True
+volume_rule_3,FORD EXPLORER,2020-12,no_abs_recall_on_file,True
+volume_rule_3,FORD F-150,2021-01,no_abs_recall_on_file,True
+volume_rule_3,FORD F-250,2024-02,no_abs_recall_on_file,False
+volume_rule_3,FORD F-350,2023-05,no_abs_recall_on_file,False
+volume_rule_3,FORD F-350 SD,2025-08,no_abs_recall_on_file,False
+volume_rule_3,FORD FIESTA,2024-12,no_abs_recall_on_file,False
+volume_rule_3,FORD FOCUS,2020-12,no_abs_recall_on_file,True
+volume_rule_3,FORD FUSION,2020-12,no_abs_recall_on_file,True
+volume_rule_3,FORD FUSION HYBRID,2020-12,no_abs_recall_on_file,True
+volume_rule_3,FORD MAVERICK HYBRID,2024-04,no_abs_recall_on_file,False
+volume_rule_3,FORD MUSTANG,2023-07,no_abs_recall_on_file,False
+volume_rule_3,FORD MUSTANG MACH E,2025-06,prior_recall,False
+volume_rule_3,FORD RANGER,2025-07,no_abs_recall_on_file,False
+volume_rule_3,FORD TRANSIT,2023-02,no_abs_recall_on_file,False
+volume_rule_3,FORD TRANSIT CONNECT,2022-09,no_abs_recall_on_file,True
+volume_rule_3,GENESIS G80,2021-07,prior_recall,True
+volume_rule_3,GMC ACADIA,2021-11,no_abs_recall_on_file,True
+volume_rule_3,GMC CANYON,2024-10,no_abs_recall_on_file,False
+volume_rule_3,GMC SIERRA 1500,2020-12,recall_followed,True
+volume_rule_3,GMC SIERRA 2500,2025-02,prior_recall,False
+volume_rule_3,GMC SIERRA 3500,2025-12,no_abs_recall_on_file,False
+volume_rule_3,GMC TERRAIN,2020-12,no_abs_recall_on_file,True
+volume_rule_3,GMC YUKON,2020-12,recall_followed,True
+volume_rule_3,HARLEY-DAVIDSON FLHX,2023-01,no_abs_recall_on_file,False
+volume_rule_3,HONDA ACCORD,2020-12,no_abs_recall_on_file,True
+volume_rule_3,HONDA CIVIC,2021-07,no_abs_recall_on_file,True
+volume_rule_3,HONDA CR-V,2021-01,no_abs_recall_on_file,True
+volume_rule_3,HONDA CROSSTOUR,2023-10,no_abs_recall_on_file,False
+volume_rule_3,HONDA FIT,2023-04,no_abs_recall_on_file,False
+volume_rule_3,HONDA HR-V,2025-08,no_abs_recall_on_file,False
+volume_rule_3,HONDA ODYSSEY,2022-03,no_abs_recall_on_file,True
+volume_rule_3,HONDA PILOT,2021-10,no_abs_recall_on_file,True
+volume_rule_3,HONDA RIDGELINE,2025-10,no_abs_recall_on_file,False
+volume_rule_3,HYUNDAI ACCENT,2022-04,recall_followed,True
+volume_rule_3,HYUNDAI AZERA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,HYUNDAI ELANTRA,2021-04,prior_recall,True
+volume_rule_3,HYUNDAI EQUUS,2024-05,prior_recall,False
+volume_rule_3,HYUNDAI GENESIS,2021-02,prior_recall,True
+volume_rule_3,HYUNDAI GENESIS COUPE,2024-05,prior_recall,False
+volume_rule_3,HYUNDAI KONA,2025-12,no_abs_recall_on_file,False
+volume_rule_3,HYUNDAI PALISADE,2023-07,no_abs_recall_on_file,False
+volume_rule_3,HYUNDAI SANTA FE,2020-12,recall_followed,True
+volume_rule_3,HYUNDAI SANTA FE SPORT,2021-02,recall_followed,True
+volume_rule_3,HYUNDAI SONATA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,HYUNDAI SONATA HYBRID,2022-04,recall_followed,True
+volume_rule_3,HYUNDAI TUCSON,2020-12,recall_followed,True
+volume_rule_3,HYUNDAI VELOSTER,2023-10,prior_recall,False
+volume_rule_3,HYUNDAI VERACRUZ,2022-02,recall_followed,True
+volume_rule_3,ITASCA NAVION,2020-12,no_abs_recall_on_file,True
+volume_rule_3,JEEP CHEROKEE,2020-12,no_abs_recall_on_file,True
+volume_rule_3,JEEP COMPASS,2021-04,no_abs_recall_on_file,True
+volume_rule_3,JEEP GLADIATOR,2023-05,no_abs_recall_on_file,False
+volume_rule_3,JEEP GRAND CHEROKEE,2020-12,no_abs_recall_on_file,True
+volume_rule_3,JEEP GRAND CHEROKEE L,2025-07,no_abs_recall_on_file,False
+volume_rule_3,JEEP LIBERTY,2021-01,no_abs_recall_on_file,True
+volume_rule_3,JEEP PATRIOT,2020-12,no_abs_recall_on_file,True
+volume_rule_3,JEEP WAGONEER,2024-09,no_abs_recall_on_file,False
+volume_rule_3,JEEP WRANGLER,2020-12,no_abs_recall_on_file,True
+volume_rule_3,KIA CADENZA,2021-01,no_abs_recall_on_file,True
+volume_rule_3,KIA FORTE,2021-02,no_abs_recall_on_file,True
+volume_rule_3,KIA OPTIMA,2020-12,recall_followed,True
+volume_rule_3,KIA OPTIMA HYBRID,2025-03,prior_recall,False
+volume_rule_3,KIA RIO,2023-12,prior_recall,False
+volume_rule_3,KIA SEDONA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,KIA SORENTO,2020-12,recall_followed,True
+volume_rule_3,KIA SOUL,2021-03,no_abs_recall_on_file,True
+volume_rule_3,KIA SPORTAGE,2021-04,recall_followed,True
+volume_rule_3,KIA TELLURIDE,2023-02,no_abs_recall_on_file,False
+volume_rule_3,KTM 790 ADVENTURE R,2022-01,no_abs_recall_on_file,True
+volume_rule_3,LEXUS CT,2024-01,no_abs_recall_on_file,False
+volume_rule_3,LEXUS ES,2026-01,no_abs_recall_on_file,False
+volume_rule_3,LEXUS LS,2024-07,no_abs_recall_on_file,False
+volume_rule_3,LEXUS RX,2021-05,no_abs_recall_on_file,True
+volume_rule_3,LEXUS RX HYBRID,2022-01,no_abs_recall_on_file,True
+volume_rule_3,LINCOLN MKX,2020-12,no_abs_recall_on_file,True
+volume_rule_3,LINCOLN MKZ,2020-12,no_abs_recall_on_file,True
+volume_rule_3,LINCOLN MKZ HYBRID,2023-07,no_abs_recall_on_file,False
+volume_rule_3,MAZDA CX-5,2024-08,no_abs_recall_on_file,False
+volume_rule_3,MAZDA MAZDA3,2020-12,no_abs_recall_on_file,True
+volume_rule_3,MAZDA TRIBUTE,2023-11,no_abs_recall_on_file,False
+volume_rule_3,MERCEDES BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+volume_rule_3,MERCEDES-BENZ E350,2022-09,no_abs_recall_on_file,True
+volume_rule_3,MERCEDES-BENZ GLA 250,2024-11,no_abs_recall_on_file,False
+volume_rule_3,MERCEDES-BENZ SPRINTER 2500,2020-12,no_abs_recall_on_file,True
+volume_rule_3,MERCEDES-BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+volume_rule_3,MERCURY MARINER,2020-12,no_abs_recall_on_file,True
+volume_rule_3,MERCURY MILAN,2020-12,no_abs_recall_on_file,True
+volume_rule_3,MINI COOPER,2024-09,no_abs_recall_on_file,False
+volume_rule_3,MITSUBISHI OUTLANDER,2023-08,no_abs_recall_on_file,False
+volume_rule_3,NEWMAR BAY STAR,2021-09,no_abs_recall_on_file,True
+volume_rule_3,NISSAN ALTIMA,2023-04,no_abs_recall_on_file,False
+volume_rule_3,NISSAN ARMADA,2021-02,no_abs_recall_on_file,True
+volume_rule_3,NISSAN FRONTIER,2022-02,no_abs_recall_on_file,True
+volume_rule_3,NISSAN KICKS,2024-04,no_abs_recall_on_file,False
+volume_rule_3,NISSAN LEAF,2021-05,no_abs_recall_on_file,True
+volume_rule_3,NISSAN MAXIMA,2021-01,no_abs_recall_on_file,True
+volume_rule_3,NISSAN MURANO,2020-12,no_abs_recall_on_file,True
+volume_rule_3,NISSAN PATHFINDER,2021-05,no_abs_recall_on_file,True
+volume_rule_3,NISSAN QUEST,2021-08,no_abs_recall_on_file,True
+volume_rule_3,NISSAN ROGUE,2020-12,no_abs_recall_on_file,True
+volume_rule_3,NISSAN SENTRA,2021-06,no_abs_recall_on_file,True
+volume_rule_3,NISSAN TITAN,2022-01,no_abs_recall_on_file,True
+volume_rule_3,PLEASURE WAY PLATEAU,2020-12,no_abs_recall_on_file,True
+volume_rule_3,PONTIAC G6,2021-03,no_abs_recall_on_file,True
+volume_rule_3,RAM 1500,2020-12,no_abs_recall_on_file,True
+volume_rule_3,RAM 2500,2020-12,no_abs_recall_on_file,True
+volume_rule_3,RAM 3500,2021-09,no_abs_recall_on_file,True
+volume_rule_3,RAM 5500,2023-04,no_abs_recall_on_file,False
+volume_rule_3,SUBARU FORESTER,2021-03,no_abs_recall_on_file,True
+volume_rule_3,SUBARU IMPREZA,2021-06,no_abs_recall_on_file,True
+volume_rule_3,SUBARU OUTBACK,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TESLA MODEL 3,2022-02,no_abs_recall_on_file,True
+volume_rule_3,TESLA MODEL S,2022-06,no_abs_recall_on_file,True
+volume_rule_3,TESLA MODEL X,2024-10,no_abs_recall_on_file,False
+volume_rule_3,TESLA MODEL Y,2022-11,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA 4RUNNER,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA CAMRY,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA CAMRY HYBRID,2021-07,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA COROLLA,2022-08,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA HIGHLANDER,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA PRIUS,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA PRIUS C,2024-09,no_abs_recall_on_file,False
+volume_rule_3,TOYOTA PRIUS PLUG-IN HYBRID,2023-10,no_abs_recall_on_file,False
+volume_rule_3,TOYOTA PRIUS V,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA RAV4,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA RAV4 PRIME,2022-06,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA SEQUOIA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA SIENNA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA TACOMA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,TOYOTA TUNDRA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,UNKNOWN UNKNOWN,2024-08,no_abs_recall_on_file,False
+volume_rule_3,VOLKSWAGEN ATLAS,2022-05,no_abs_recall_on_file,True
+volume_rule_3,VOLKSWAGEN EOS,2021-01,no_abs_recall_on_file,True
+volume_rule_3,VOLKSWAGEN GOLF,2024-08,no_abs_recall_on_file,False
+volume_rule_3,VOLKSWAGEN JETTA,2020-12,no_abs_recall_on_file,True
+volume_rule_3,VOLKSWAGEN PASSAT,2021-08,no_abs_recall_on_file,True
+volume_rule_3,VOLKSWAGEN RABBIT,2024-04,no_abs_recall_on_file,False
+volume_rule_3,VOLKSWAGEN TIGUAN,2021-10,no_abs_recall_on_file,True
+volume_rule_3,WINNEBAGO ADVENTURER,2023-05,no_abs_recall_on_file,False
+volume_rule_5,AUDI A6,2023-05,no_abs_recall_on_file,False
+volume_rule_5,CADILLAC SRX,2021-02,no_abs_recall_on_file,True
+volume_rule_5,CAN-AM RYKER,2023-08,no_abs_recall_on_file,False
+volume_rule_5,CHEVROLET COLORADO,2024-08,no_abs_recall_on_file,False
+volume_rule_5,CHEVROLET CRUZE,2025-02,no_abs_recall_on_file,False
+volume_rule_5,CHEVROLET EQUINOX,2020-12,no_abs_recall_on_file,True
+volume_rule_5,CHEVROLET EXPRESS,2024-04,no_abs_recall_on_file,False
+volume_rule_5,CHEVROLET IMPALA,2020-12,no_abs_recall_on_file,True
+volume_rule_5,CHEVROLET MALIBU,2020-12,no_abs_recall_on_file,True
+volume_rule_5,CHEVROLET SILVERADO 1500,2020-12,recall_followed,True
+volume_rule_5,CHEVROLET SUBURBAN,2021-03,no_abs_recall_on_file,True
+volume_rule_5,CHEVROLET TAHOE,2021-01,recall_followed,True
+volume_rule_5,CHEVROLET TRAVERSE,2025-07,no_abs_recall_on_file,False
+volume_rule_5,CHEVROLET TRAX,2023-02,no_abs_recall_on_file,False
+volume_rule_5,CHRYSLER 200,2020-12,no_abs_recall_on_file,True
+volume_rule_5,CHRYSLER 300,2021-08,no_abs_recall_on_file,True
+volume_rule_5,CHRYSLER PACIFICA,2024-02,no_abs_recall_on_file,False
+volume_rule_5,CHRYSLER TOWN AND COUNTRY,2021-04,no_abs_recall_on_file,True
+volume_rule_5,DODGE CHARGER,2021-01,no_abs_recall_on_file,True
+volume_rule_5,DODGE DURANGO,2022-08,no_abs_recall_on_file,True
+volume_rule_5,DODGE JOURNEY,2020-12,no_abs_recall_on_file,True
+volume_rule_5,FISKER OCEAN,2024-05,no_abs_recall_on_file,False
+volume_rule_5,FORD EDGE,2020-12,no_abs_recall_on_file,True
+volume_rule_5,FORD ESCAPE,2020-12,no_abs_recall_on_file,True
+volume_rule_5,FORD EXPLORER,2020-12,no_abs_recall_on_file,True
+volume_rule_5,FORD F-150,2021-05,no_abs_recall_on_file,True
+volume_rule_5,FORD FOCUS,2022-06,no_abs_recall_on_file,True
+volume_rule_5,FORD FUSION,2020-12,no_abs_recall_on_file,True
+volume_rule_5,FORD FUSION HYBRID,2024-05,no_abs_recall_on_file,False
+volume_rule_5,FORD MAVERICK HYBRID,2024-04,no_abs_recall_on_file,False
+volume_rule_5,FORD RANGER,2025-07,no_abs_recall_on_file,False
+volume_rule_5,FORD TRANSIT CONNECT,2022-11,no_abs_recall_on_file,True
+volume_rule_5,GMC ACADIA,2025-07,no_abs_recall_on_file,False
+volume_rule_5,GMC SIERRA 1500,2020-12,recall_followed,True
+volume_rule_5,GMC YUKON,2022-10,prior_recall,True
+volume_rule_5,HONDA ACCORD,2020-12,no_abs_recall_on_file,True
+volume_rule_5,HONDA CIVIC,2022-09,no_abs_recall_on_file,True
+volume_rule_5,HONDA CR-V,2022-02,no_abs_recall_on_file,True
+volume_rule_5,HONDA ODYSSEY,2022-09,no_abs_recall_on_file,True
+volume_rule_5,HONDA PILOT,2022-01,no_abs_recall_on_file,True
+volume_rule_5,HYUNDAI ACCENT,2023-11,prior_recall,False
+volume_rule_5,HYUNDAI AZERA,2024-03,prior_recall,False
+volume_rule_5,HYUNDAI ELANTRA,2021-05,prior_recall,True
+volume_rule_5,HYUNDAI GENESIS,2021-03,prior_recall,True
+volume_rule_5,HYUNDAI PALISADE,2023-10,no_abs_recall_on_file,False
+volume_rule_5,HYUNDAI SANTA FE,2020-12,recall_followed,True
+volume_rule_5,HYUNDAI SANTA FE SPORT,2022-02,recall_followed,True
+volume_rule_5,HYUNDAI SONATA,2020-12,no_abs_recall_on_file,True
+volume_rule_5,HYUNDAI TUCSON,2020-12,recall_followed,True
+volume_rule_5,HYUNDAI VELOSTER,2024-01,prior_recall,False
+volume_rule_5,HYUNDAI VERACRUZ,2022-05,recall_followed,True
+volume_rule_5,JEEP CHEROKEE,2021-10,no_abs_recall_on_file,True
+volume_rule_5,JEEP COMPASS,2021-08,no_abs_recall_on_file,True
+volume_rule_5,JEEP GLADIATOR,2023-08,no_abs_recall_on_file,False
+volume_rule_5,JEEP GRAND CHEROKEE,2020-12,no_abs_recall_on_file,True
+volume_rule_5,JEEP GRAND CHEROKEE L,2025-08,no_abs_recall_on_file,False
+volume_rule_5,JEEP WRANGLER,2020-12,no_abs_recall_on_file,True
+volume_rule_5,KIA CADENZA,2024-03,prior_recall,False
+volume_rule_5,KIA FORTE,2023-12,prior_recall,False
+volume_rule_5,KIA OPTIMA,2020-12,recall_followed,True
+volume_rule_5,KIA RIO,2024-01,prior_recall,False
+volume_rule_5,KIA SEDONA,2024-07,no_abs_recall_on_file,False
+volume_rule_5,KIA SORENTO,2020-12,recall_followed,True
+volume_rule_5,KIA SOUL,2022-06,recall_followed,True
+volume_rule_5,KIA SPORTAGE,2022-04,recall_followed,True
+volume_rule_5,KIA TELLURIDE,2023-06,no_abs_recall_on_file,False
+volume_rule_5,LEXUS CT,2024-02,no_abs_recall_on_file,False
+volume_rule_5,LEXUS LS,2024-09,no_abs_recall_on_file,False
+volume_rule_5,LEXUS RX,2021-12,no_abs_recall_on_file,True
+volume_rule_5,LINCOLN MKX,2020-12,no_abs_recall_on_file,True
+volume_rule_5,LINCOLN MKZ,2020-12,no_abs_recall_on_file,True
+volume_rule_5,MAZDA MAZDA3,2021-08,no_abs_recall_on_file,True
+volume_rule_5,MERCEDES BENZ SPRINTER 3500,2021-06,no_abs_recall_on_file,True
+volume_rule_5,MERCEDES-BENZ SPRINTER 2500,2020-12,no_abs_recall_on_file,True
+volume_rule_5,MERCEDES-BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+volume_rule_5,MERCURY MARINER,2020-12,no_abs_recall_on_file,True
+volume_rule_5,MERCURY MILAN,2020-12,no_abs_recall_on_file,True
+volume_rule_5,NISSAN FRONTIER,2023-01,no_abs_recall_on_file,False
+volume_rule_5,NISSAN KICKS,2025-02,no_abs_recall_on_file,False
+volume_rule_5,NISSAN LEAF,2022-11,no_abs_recall_on_file,True
+volume_rule_5,NISSAN MURANO,2020-12,no_abs_recall_on_file,True
+volume_rule_5,NISSAN PATHFINDER,2022-04,no_abs_recall_on_file,True
+volume_rule_5,NISSAN ROGUE,2021-10,no_abs_recall_on_file,True
+volume_rule_5,NISSAN SENTRA,2025-10,no_abs_recall_on_file,False
+volume_rule_5,RAM 1500,2020-12,no_abs_recall_on_file,True
+volume_rule_5,RAM 2500,2020-12,no_abs_recall_on_file,True
+volume_rule_5,RAM 3500,2022-03,no_abs_recall_on_file,True
+volume_rule_5,SUBARU FORESTER,2023-02,no_abs_recall_on_file,False
+volume_rule_5,SUBARU IMPREZA,2021-10,no_abs_recall_on_file,True
+volume_rule_5,SUBARU OUTBACK,2021-12,no_abs_recall_on_file,True
+volume_rule_5,TESLA MODEL 3,2022-04,no_abs_recall_on_file,True
+volume_rule_5,TESLA MODEL Y,2024-10,no_abs_recall_on_file,False
+volume_rule_5,TOYOTA CAMRY,2020-12,no_abs_recall_on_file,True
+volume_rule_5,TOYOTA HIGHLANDER,2020-12,no_abs_recall_on_file,True
+volume_rule_5,TOYOTA PRIUS,2020-12,no_abs_recall_on_file,True
+volume_rule_5,TOYOTA PRIUS PLUG-IN HYBRID,2024-08,no_abs_recall_on_file,False
+volume_rule_5,TOYOTA PRIUS V,2022-04,no_abs_recall_on_file,True
+volume_rule_5,TOYOTA RAV4,2023-05,no_abs_recall_on_file,False
+volume_rule_5,TOYOTA SIENNA,2020-12,no_abs_recall_on_file,True
+volume_rule_5,VOLKSWAGEN ATLAS,2022-06,no_abs_recall_on_file,True
+volume_rule_5,VOLKSWAGEN EOS,2021-01,no_abs_recall_on_file,True
+volume_rule_5,VOLKSWAGEN JETTA,2020-12,no_abs_recall_on_file,True
+volume_rule_5,VOLKSWAGEN PASSAT,2021-09,no_abs_recall_on_file,True
+volume_rule_8,CADILLAC SRX,2022-01,no_abs_recall_on_file,True
+volume_rule_8,CHEVROLET COLORADO,2025-09,no_abs_recall_on_file,False
+volume_rule_8,CHEVROLET EQUINOX,2021-04,no_abs_recall_on_file,True
+volume_rule_8,CHEVROLET IMPALA,2020-12,no_abs_recall_on_file,True
+volume_rule_8,CHEVROLET MALIBU,2020-12,no_abs_recall_on_file,True
+volume_rule_8,CHEVROLET SILVERADO 1500,2020-12,recall_followed,True
+volume_rule_8,CHEVROLET TAHOE,2021-03,recall_followed,True
+volume_rule_8,CHEVROLET TRAVERSE,2025-07,no_abs_recall_on_file,False
+volume_rule_8,DODGE JOURNEY,2020-12,no_abs_recall_on_file,True
+volume_rule_8,FORD EDGE,2020-12,no_abs_recall_on_file,True
+volume_rule_8,FORD ESCAPE,2020-12,no_abs_recall_on_file,True
+volume_rule_8,FORD EXPLORER,2020-12,no_abs_recall_on_file,True
+volume_rule_8,FORD F-150,2021-05,no_abs_recall_on_file,True
+volume_rule_8,FORD FUSION,2020-12,no_abs_recall_on_file,True
+volume_rule_8,FORD TRANSIT CONNECT,2023-02,no_abs_recall_on_file,False
+volume_rule_8,GMC ACADIA,2025-08,no_abs_recall_on_file,False
+volume_rule_8,GMC SIERRA 1500,2021-05,recall_followed,True
+volume_rule_8,HONDA ACCORD,2020-12,no_abs_recall_on_file,True
+volume_rule_8,HONDA CIVIC,2023-07,no_abs_recall_on_file,False
+volume_rule_8,HONDA CR-V,2022-02,no_abs_recall_on_file,True
+volume_rule_8,HONDA ODYSSEY,2025-08,no_abs_recall_on_file,False
+volume_rule_8,HONDA PILOT,2023-07,no_abs_recall_on_file,False
+volume_rule_8,HYUNDAI ACCENT,2023-12,prior_recall,False
+volume_rule_8,HYUNDAI AZERA,2024-04,prior_recall,False
+volume_rule_8,HYUNDAI ELANTRA,2021-08,prior_recall,True
+volume_rule_8,HYUNDAI GENESIS,2024-04,prior_recall,False
+volume_rule_8,HYUNDAI PALISADE,2024-06,no_abs_recall_on_file,False
+volume_rule_8,HYUNDAI SANTA FE,2020-12,recall_followed,True
+volume_rule_8,HYUNDAI SANTA FE SPORT,2022-04,recall_followed,True
+volume_rule_8,HYUNDAI SONATA,2022-01,no_abs_recall_on_file,True
+volume_rule_8,HYUNDAI TUCSON,2020-12,recall_followed,True
+volume_rule_8,HYUNDAI VELOSTER,2024-02,prior_recall,False
+volume_rule_8,JEEP CHEROKEE,2025-08,no_abs_recall_on_file,False
+volume_rule_8,JEEP COMPASS,2022-12,no_abs_recall_on_file,True
+volume_rule_8,JEEP GRAND CHEROKEE,2022-11,no_abs_recall_on_file,True
+volume_rule_8,JEEP WRANGLER,2021-07,no_abs_recall_on_file,True
+volume_rule_8,KIA FORTE,2024-01,prior_recall,False
+volume_rule_8,KIA OPTIMA,2020-12,recall_followed,True
+volume_rule_8,KIA RIO,2024-02,prior_recall,False
+volume_rule_8,KIA SORENTO,2020-12,recall_followed,True
+volume_rule_8,KIA SOUL,2024-01,prior_recall,False
+volume_rule_8,KIA SPORTAGE,2022-08,recall_followed,True
+volume_rule_8,LINCOLN MKZ,2020-12,no_abs_recall_on_file,True
+volume_rule_8,MERCEDES-BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+volume_rule_8,MERCURY MILAN,2020-12,no_abs_recall_on_file,True
+volume_rule_8,NISSAN FRONTIER,2023-02,no_abs_recall_on_file,False
+volume_rule_8,NISSAN KICKS,2025-05,no_abs_recall_on_file,False
+volume_rule_8,NISSAN MURANO,2021-07,no_abs_recall_on_file,True
+volume_rule_8,NISSAN ROGUE,2023-02,no_abs_recall_on_file,False
+volume_rule_8,RAM 1500,2021-03,no_abs_recall_on_file,True
+volume_rule_8,RAM 2500,2021-05,no_abs_recall_on_file,True
+volume_rule_8,RAM 3500,2022-04,no_abs_recall_on_file,True
+volume_rule_8,TOYOTA CAMRY,2021-01,no_abs_recall_on_file,True
+volume_rule_8,TOYOTA HIGHLANDER,2020-12,no_abs_recall_on_file,True
+volume_rule_8,TOYOTA PRIUS,2020-12,no_abs_recall_on_file,True
+volume_rule_8,TOYOTA PRIUS V,2022-06,no_abs_recall_on_file,True
+volume_rule_8,TOYOTA SIENNA,2021-01,no_abs_recall_on_file,True
+volume_rule_8,VOLKSWAGEN ATLAS,2023-10,no_abs_recall_on_file,False
+volume_rule_8,VOLKSWAGEN JETTA,2020-12,no_abs_recall_on_file,True
+volume_rule_10,CHEVROLET IMPALA,2020-12,no_abs_recall_on_file,True
+volume_rule_10,CHEVROLET MALIBU,2021-03,no_abs_recall_on_file,True
+volume_rule_10,CHEVROLET SILVERADO 1500,2020-12,recall_followed,True
+volume_rule_10,CHEVROLET TAHOE,2021-04,recall_followed,True
+volume_rule_10,CHEVROLET TRAVERSE,2025-08,no_abs_recall_on_file,False
+volume_rule_10,DODGE JOURNEY,2020-12,no_abs_recall_on_file,True
+volume_rule_10,FORD EDGE,2020-12,no_abs_recall_on_file,True
+volume_rule_10,FORD ESCAPE,2020-12,no_abs_recall_on_file,True
+volume_rule_10,FORD EXPLORER,2022-03,no_abs_recall_on_file,True
+volume_rule_10,FORD F-150,2021-06,no_abs_recall_on_file,True
+volume_rule_10,FORD FUSION,2020-12,no_abs_recall_on_file,True
+volume_rule_10,GMC ACADIA,2025-08,no_abs_recall_on_file,False
+volume_rule_10,HONDA ACCORD,2021-04,no_abs_recall_on_file,True
+volume_rule_10,HONDA CIVIC,2023-07,no_abs_recall_on_file,False
+volume_rule_10,HONDA CR-V,2022-05,no_abs_recall_on_file,True
+volume_rule_10,HONDA PILOT,2024-02,no_abs_recall_on_file,False
+volume_rule_10,HYUNDAI ACCENT,2024-02,prior_recall,False
+volume_rule_10,HYUNDAI ELANTRA,2023-12,prior_recall,False
+volume_rule_10,HYUNDAI PALISADE,2024-06,no_abs_recall_on_file,False
+volume_rule_10,HYUNDAI SANTA FE,2020-12,recall_followed,True
+volume_rule_10,HYUNDAI SANTA FE SPORT,2022-05,recall_followed,True
+volume_rule_10,HYUNDAI SONATA,2022-03,no_abs_recall_on_file,True
+volume_rule_10,HYUNDAI TUCSON,2020-12,recall_followed,True
+volume_rule_10,HYUNDAI VELOSTER,2024-03,prior_recall,False
+volume_rule_10,JEEP GRAND CHEROKEE,2023-02,no_abs_recall_on_file,False
+volume_rule_10,JEEP WRANGLER,2021-10,no_abs_recall_on_file,True
+volume_rule_10,KIA FORTE,2024-02,prior_recall,False
+volume_rule_10,KIA OPTIMA,2023-01,recall_followed,False
+volume_rule_10,KIA RIO,2024-04,prior_recall,False
+volume_rule_10,KIA SORENTO,2020-12,recall_followed,True
+volume_rule_10,KIA SOUL,2024-02,prior_recall,False
+volume_rule_10,KIA SPORTAGE,2022-08,recall_followed,True
+volume_rule_10,LINCOLN MKZ,2021-01,no_abs_recall_on_file,True
+volume_rule_10,MERCEDES-BENZ SPRINTER 3500,2020-12,no_abs_recall_on_file,True
+volume_rule_10,MERCURY MILAN,2021-01,no_abs_recall_on_file,True
+volume_rule_10,NISSAN MURANO,2021-07,no_abs_recall_on_file,True
+volume_rule_10,RAM 1500,2022-07,no_abs_recall_on_file,True
+volume_rule_10,RAM 2500,2021-07,no_abs_recall_on_file,True
+volume_rule_10,RAM 3500,2022-05,no_abs_recall_on_file,True
+volume_rule_10,TOYOTA CAMRY,2022-03,no_abs_recall_on_file,True
+volume_rule_10,TOYOTA HIGHLANDER,2021-01,no_abs_recall_on_file,True
+volume_rule_10,TOYOTA PRIUS,2020-12,no_abs_recall_on_file,True
+volume_rule_10,TOYOTA PRIUS V,2022-07,no_abs_recall_on_file,True
+volume_rule_10,TOYOTA SIENNA,2021-02,no_abs_recall_on_file,True
+volume_rule_10,VOLKSWAGEN JETTA,2020-12,no_abs_recall_on_file,True

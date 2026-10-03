@@ -1,0 +1,358 @@
+{
+  "vehicle": "TOYOTA PRIUS V",
+  "as_of": "2026-01",
+  "writer": "extractive",
+  "markdown": "# SkidSignal brief: TOYOTA PRIUS V\n\n| As of | Tier | Priority score | Rank among flagged families | Writer | Guardrails |\n|---|---|---|---|---|---|\n| 2026-01 | persistent | 47.7 | 6 of 27 | extractive | passed |\n\n## 1. Signal summary\n\nTOYOTA PRIUS V is on the persistent tier as of 2026-01 with a priority score of 47.7, rank 6 of 27 flagged families [S]. Between 2024-02 and 2026-01, 51 of its 111 complaints were ABS related, a share of 45.9 percent against 3.6 percent across all vehicles [S]. The proportional reporting ratio is 12.81 with a 95 percent interval of 10.45 to 15.71, and the lower credibility bound of the information component (IC025) is 3.09 [S]. The most recent 6 months brought 14 ABS complaints against 13.1 expected from the earlier rate, a rate ratio of 1.07, which does not meet the surge criterion (q 0.9648) [S].\n\n## 2. Statistical evidence\n\nWindow: 2024-02 to 2026-01 (24 months). All figures are computed by the signal engine.\n\n| Metric | Value | How to read it |\n|---|---|---|\n| ABS related complaints | 51 of 111 (45.9%) | Database wide share is 3.6% |\n| Expected ABS complaints | 4.0 | If this family matched the database mix |\n| Proportional reporting ratio | 12.81 (10.45 to 15.71) | Signal criterion: at least 2 |\n| Reporting odds ratio | 22.85 (15.72 to 33.23) | Interval excluding 1 supports an excess |\n| Chi square | 558.4 | Signal criterion: at least 4 |\n| Information component | 3.51 (IC025 3.09) | Signal criterion: IC025 above 0 |\n| Last 6 months | 14 observed, 13.1 expected | Rate ratio 1.07, adjusted q 0.9648 |\n| CUSUM peak | 1.0 | Not in alarm |\n| Severe outcomes | 2 (3.9%) | 2 crash, 0 fire, 3 injured, 1 deaths |\n\n## 3. Failure mode profile\n\nThe most frequent failure mode tag is \"ABS or brake warning lamp illuminated\" (39 narratives, 76.5 percent), followed by \"Stability or traction control affected together with ABS\" (14, 27.5 percent) [S]. Complaints concentrate in model years 2012 (18), 2013 (18), 2014 (11) [S]. An owner report for a 2012 TOYOTA PRIUS V states: \"while driving i lost the power braking on my vehicle and the abs, traction and another exclamtion point symbol came on; my brakes had to be pushed really hard all the\" [C:11593589]. An owner report for a 2013 TOYOTA PRIUS V states: \"The contact owns a 2013 Toyota Prius V; The contact stated while driving 35-40 MPH, the ABS, traction control, parking brake, and the malfunction indicator warning\" [C:11655151]. An owner report for a 2014 TOYOTA PRIUS V states: \"ease reference Toyota Service Bulletin POL18-03, which addresses issues related to the braking system in certain Toyota models, including the Prius V; This bulletin\" [C:11689707]. Reference note \"Warning lamp illumination\": The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on [K:failure_modes.warning_lamp_illumination].\n\n| Failure mode | Narratives | Share |\n|---|---|---|\n| ABS or brake warning lamp illuminated | 39 | 76.5% |\n| Stability or traction control affected together with ABS | 14 | 27.5% |\n| Loss of braking or extended stopping distance | 11 | 21.6% |\n| ABS module, pump or hydraulic control unit failure | 5 | 9.8% |\n| ABS activation without demand or abnormal pedal pulsation | 1 | 2.0% |\n| Electrical short, wiring, fuse, corrosion or software | 1 | 2.0% |\n\n## 4. Complaint evidence\n\n- **[C:11593589]** 2012 TOYOTA PRIUS V | SERVICE BRAKES (received 2024-06-11, retrieved): \"while driving i lost the power braking on my vehicle and the abs, traction and another exclamtion point symbol came on. my brakes had to be pushed really hard all the way down to the floor board increasing my braking distance.\"\n- **[C:11655151]** 2013 TOYOTA PRIUS V | PARKING BRAKE | SERVICE BRAKES, HYDRAULIC (received 2025-04-17, retrieved): \"The contact owns a 2013 Toyota Prius V. The contact stated while driving 35-40 MPH, the ABS, traction control, parking brake, and the malfunction indicator warning lights were illuminated. Additionally, the brake pedal vibrated while being depressed. The vehicle was taken to the dealer, and DTC: C1391 was retrieved. The dealer determined that the brake booster pump assembly and the brake booster assembly needed to ...\"\n- **[C:11689707]** 2014 TOYOTA PRIUS V | SERVICE BRAKES (received 2025-09-25, retrieved): \"ease reference Toyota Service Bulletin POL18-03, which addresses issues related to the braking system in certain Toyota models, including the Prius V. This bulletin indicates that various brake system-related warning lamps may illuminate due to internal malfunctions within the brake system, and it outlines affected parts that may require replacement. Additionally, please reference Toyota Customer Support Program ...\"\n- **[C:11594033]** 2014 TOYOTA PRIUS V | SERVICE BRAKES (received 2024-06-12, retrieved): \"Completely unannounced and sudden brake failure, which caused a failure in the traction control and ABS system as well. Most likely brake actuator pump failure.\"\n- **[C:11671770]** 2015 TOYOTA PRIUS V | SERVICE BRAKES (received 2025-07-07, retrieved): \"Brake light + ABS + traction light came on and the brake became harder to control. I was driving in the rain and briefly lost control. Fortunately, no accident.\"\n- **[C:11684153]** 2013 TOYOTA PRIUS V | SERVICE BRAKES (received 2025-08-31, retrieved): \"Prior to issue, noticed a buzzing sound from engine compartment, later known to be the ABS accumulator pump, occurring more frequently - first multiple times when braking, then later continuously while driving. Dashboard eventually lit all brake-related warning lights (\"BRAKE\", TSC, ABS) and brake pedal behavior changed markedly. This occurred after parking in my driveway while engaging the parking brake. Brake ...\"\n- **[C:11597987]** 2014 TOYOTA PRIUS V | SERVICE BRAKES, HYDRAULIC (received 2024-07-01, severe outcome): \"The contact owns a 2014 Toyota Prius V. The contact stated that the vehicle was previously involved in two car crashes, where the vehicle rear-ended other vehicles due to the brakes failure. The air bags did not deploy. A police report was filed after the second crash, but the information was not available. The contact stated that the other driver sustained unknown injuries during the second crash. The vehicle ...\"\n- **[C:11569297]** 2012 TOYOTA PRIUS V | SERVICE BRAKES | STEERING | FORWARD COLLISION AVOIDANCE: AUTOMATIC EMERGENCY BRAKING (received 2024-02-01, severe outcome): \"8/2/22 My ABS light came on. Took the car to a dealer. They kept it for six weeks and returned it on 10/3/22. No charge and no explanation. 11/7/22 engine light came on. Took in to dealer, they returned it 11/17/22 indicated incorrect air/ fuel mixture. 10/9/23 Traveling 47 mph, came around a mountain and encountered stopped cars. Slammed on the brakes, car did not slow down, steering wheel locked to the right, car ...\"\n\n## 5. Recalls and context\n\nNo ABS related recall campaign for this family appears in the recall file before the as of date [S]. A brake related campaign for the same make, 21V598, states: \"Dealer Letter: The subject vehicles are manufactured by BMW; According to BMW, the subject vehicles have been equipped with an engine management software that, under certain specific engine start\" [R:21V598]. A brake related campaign for the same make, 24V708, states: \"Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023 - 2025 Model Year Corolla HV Temporary Hard Brake Pedal During Cornering Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023-\" [R:24V708].\n\n- **[R:21V598]** Recall 21V598 | BMW | TOYOTA | model years 2019 to 2021 (related recall, same make, 2021-08-07): Dealer Letter: The subject vehicles are manufactured by BMW. According to BMW, the subject vehicles have been equipped with an engine management software that, under certain specific engine start conditions, could damage a component that provides braking power assistance. In this condition, there could be a loss in the brake assist and an increase in stopping distance. This can lead to an increased risk of a crash. ...\n- **[R:24V708]** Recall 24V708 | TOYOTA | model years 2023 to 2025 (related recall, same make, 2024-09-22): Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023 - 2025 Model Year Corolla HV Temporary Hard Brake Pedal During Cornering Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023- 2025 Model Year Corolla HV Temporary Hard Brake Pedal During Cornering SAFETY RECALL 24TA11 (Remedy Notice) Certain 2023- 2024 Model Year Corolla Cross HV Temporary Hard Brake Pedal During Cornering\n- **[R:22V239]** Recall 22V239 | LEXUS | TOYOTA | model years 2020 to 2022 (related recall, same make, 2022-04-02): A software error can cause the Vehicle Stability Control system (VSC) not to default to ON the next time the car is started under certain circumstances. This can result in noncompliance with a federal safety requirement. Operating the vehicle with VSC deactivated could increase the risk of a crash in certain driving conditions. A software error can cause the Vehicle Stability Control system (VSC) not to default to ...\n- **[K:failure_modes.warning_lamp_illumination]** Warning lamp illumination (reference note): The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on. On its own this indicates that the system detected a fault and disabled itself. The safety relevance depends on what failed and whether base braking is affected. A sustained rise in lamp complaints for one vehicle family is still valuable because it is usually the ...\n- **[K:abs_fundamentals.fail_safe_behaviour]** Fail safe behaviour (reference note): When the controller detects a fault it disables antilock control, lights the ABS warning lamp and leaves the base hydraulic brakes working. The vehicle then brakes like a vehicle without ABS, so wheels can lock in a panic stop. Because traction control, electronic stability control and often automatic emergency braking share the same sensors, pump and valves, a single ABS fault commonly disables those functions at ...\n- **[K:surveillance_methods.known_limits_of_complaint_based_surveillance]** Known limits of complaint based surveillance (reference note): Complaints are voluntary and unverified. Reporting rises after news coverage or a recall announcement, which is called stimulated reporting. Vehicles with large fleets generate more complaints of every kind, which disproportionality partly corrects for but volume thresholds do not. A statistical signal is a reason for an engineer to read the evidence. It is not a finding that a defect exists.\n\n## 6. Assessment\n\nABS issues are persistently over represented for this family, but the recent rate is not rising faster than its own history [S]. 2 of the 51 ABS complaints involve a crash, fire, injury or death (2 crash, 0 fire, 3 injured, 1 deaths) [S]. This is a statistical signal built from unverified owner reports and it does not establish that a defect exists [K:surveillance_methods.known_limits_of_complaint_based_surveillance].\n\n## 7. Recommended analyst actions\n\n1. Read the cited narratives in full and confirm the failure mode coding.\n2. Check manufacturer communications and open investigations for this family, since no ABS recall is on file.\n3. Request a build date breakdown for model years 2012, 2013, 2014.\n4. Review the signal again next month and note whether the tier or score has changed.\n\n## 8. Limitations\n\nComplaints are voluntary, unverified owner reports and reporting rises after publicity or a recall. Disproportionality compares complaint mixes and is not a failure rate, because the number of vehicles in service is not in the data. Signals are computed for a vehicle family across all model years, so a problem confined to one model year can be diluted. The brief only uses records received on or before the as of date.\n\nMonthly ABS complaints in the window: 2024-02: 1, 2024-03: 2, 2024-04: 1, 2024-05: 1, 2024-06: 3, 2024-07: 2, 2024-08: 5, 2024-09: 4, 2024-10: 1, 2024-11: 1, 2024-12: 0, 2025-01: 4, 2025-02: 2, 2025-03: 1, 2025-04: 2, 2025-05: 2, 2025-06: 3, 2025-07: 2, 2025-08: 2, 2025-09: 4, 2025-10: 3, 2025-11: 0, 2025-12: 3, 2026-01: 2\n\nGuardrail checks: citation validity 1.00, citation coverage 1.00, numeric fidelity 1.00. Citation keys: S is a computed statistic, C is an owner complaint (ODI number), R is a recall campaign, K is a project reference note.\n",
+  "narrative": {
+    "summary": "TOYOTA PRIUS V is on the persistent tier as of 2026-01 with a priority score of 47.7, rank 6 of 27 flagged families [S]. Between 2024-02 and 2026-01, 51 of its 111 complaints were ABS related, a share of 45.9 percent against 3.6 percent across all vehicles [S]. The proportional reporting ratio is 12.81 with a 95 percent interval of 10.45 to 15.71, and the lower credibility bound of the information component (IC025) is 3.09 [S]. The most recent 6 months brought 14 ABS complaints against 13.1 expected from the earlier rate, a rate ratio of 1.07, which does not meet the surge criterion (q 0.9648) [S].",
+    "failure_modes": "The most frequent failure mode tag is \"ABS or brake warning lamp illuminated\" (39 narratives, 76.5 percent), followed by \"Stability or traction control affected together with ABS\" (14, 27.5 percent) [S]. Complaints concentrate in model years 2012 (18), 2013 (18), 2014 (11) [S]. An owner report for a 2012 TOYOTA PRIUS V states: \"while driving i lost the power braking on my vehicle and the abs, traction and another exclamtion point symbol came on; my brakes had to be pushed really hard all the\" [C:11593589]. An owner report for a 2013 TOYOTA PRIUS V states: \"The contact owns a 2013 Toyota Prius V; The contact stated while driving 35-40 MPH, the ABS, traction control, parking brake, and the malfunction indicator warning\" [C:11655151]. An owner report for a 2014 TOYOTA PRIUS V states: \"ease reference Toyota Service Bulletin POL18-03, which addresses issues related to the braking system in certain Toyota models, including the Prius V; This bulletin\" [C:11689707]. Reference note \"Warning lamp illumination\": The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on [K:failure_modes.warning_lamp_illumination].",
+    "context": "No ABS related recall campaign for this family appears in the recall file before the as of date [S]. A brake related campaign for the same make, 21V598, states: \"Dealer Letter: The subject vehicles are manufactured by BMW; According to BMW, the subject vehicles have been equipped with an engine management software that, under certain specific engine start\" [R:21V598]. A brake related campaign for the same make, 24V708, states: \"Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023 - 2025 Model Year Corolla HV Temporary Hard Brake Pedal During Cornering Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023-\" [R:24V708].",
+    "assessment": "ABS issues are persistently over represented for this family, but the recent rate is not rising faster than its own history [S]. 2 of the 51 ABS complaints involve a crash, fire, injury or death (2 crash, 0 fire, 3 injured, 1 deaths) [S]. This is a statistical signal built from unverified owner reports and it does not establish that a defect exists [K:surveillance_methods.known_limits_of_complaint_based_surveillance].",
+    "actions": [
+      "Read the cited narratives in full and confirm the failure mode coding.",
+      "Check manufacturer communications and open investigations for this family, since no ABS recall is on file.",
+      "Request a build date breakdown for model years 2012, 2013, 2014.",
+      "Review the signal again next month and note whether the tier or score has changed."
+    ]
+  },
+  "guardrails": {
+    "passed": true,
+    "citation_validity": 1.0,
+    "citation_coverage": 1.0,
+    "numeric_fidelity": 1.0,
+    "invalid_citations": [],
+    "unsupported_numbers": [],
+    "overstatement_hits": [],
+    "issues": []
+  },
+  "evidence": {
+    "vehicle": "TOYOTA PRIUS V",
+    "as_of": "2026-01",
+    "tier": "persistent",
+    "facts": {
+      "vehicle": "TOYOTA PRIUS V",
+      "as_of": "2026-01",
+      "window_start": "2024-02",
+      "window_months": 24,
+      "recent_months": 6,
+      "tier": "persistent",
+      "score": "47.7",
+      "rank": 6,
+      "flagged_total": 27,
+      "abs_complaints": 51,
+      "all_complaints": 111,
+      "abs_share_pct": "45.9",
+      "database_share_pct": "3.6",
+      "expected": "4.0",
+      "prr": "12.81",
+      "prr_lo": "10.45",
+      "prr_hi": "15.71",
+      "ror": "22.85",
+      "ror_lo": "15.72",
+      "ror_hi": "33.23",
+      "chi2": "558.4",
+      "ic": "3.51",
+      "ic025": "3.09",
+      "ic975": "3.88",
+      "recent_abs": 14,
+      "expected_recent": "13.1",
+      "rate_ratio": "1.07",
+      "surge_q": "0.9648",
+      "cusum_peak": "1.0",
+      "cusum_alarm": false,
+      "disproportionate": true,
+      "surging": false,
+      "severe": 2,
+      "crash": 2,
+      "fire": 0,
+      "injured": 3,
+      "deaths": 1,
+      "severe_share_pct": "3.9",
+      "known_abs_recalls": []
+    },
+    "fact_lines": [
+      "Vehicle family TOYOTA PRIUS V, as of 2026-01, window 2024-02 to 2026-01 (24 months).",
+      "Tier persistent, priority score 47.7, rank 6 of 27 flagged families.",
+      "ABS related complaints in window: 51 of 111 complaints (45.9 percent). Database wide share: 3.6 percent. Expected count: 4.0.",
+      "PRR 12.81 (95 percent interval 10.45 to 15.71); ROR 22.85 (15.72 to 33.23); chi square 558.4.",
+      "Information component 3.51 (IC025 3.09, IC975 3.88).",
+      "Recent 6 months: 14 ABS complaints against 13.1 expected (rate ratio 1.07, adjusted q 0.9648). CUSUM peak 1.0, alarm False.",
+      "Severity among ABS complaints: 2 with crash, fire, injury or death (3.9 percent); 2 crash, 0 fire, 3 injured, 1 deaths.",
+      "Failure modes: ABS or brake warning lamp illuminated 39 (76.5 percent); Stability or traction control affected together with ABS 14 (27.5 percent); Loss of braking or extended stopping distance 11 (21.6 percent); ABS module, pump or hydraulic control unit failure 5 (9.8 percent); ABS activation without demand or abnormal pedal pulsation 1 (2.0 percent); Electrical short, wiring, fuse, corrosion or software 1 (2.0 percent).",
+      "Model years with most ABS complaints: 2012 (18), 2013 (18), 2014 (11), 2015 (3), 2016 (1).",
+      "ABS related recall campaigns on file for this family before the as of date: none."
+    ],
+    "failure_modes": [
+      {
+        "mode": "warning_lamp",
+        "label": "ABS or brake warning lamp illuminated",
+        "count": 39,
+        "share": 0.7647058823529411
+      },
+      {
+        "mode": "stability_traction_coupling",
+        "label": "Stability or traction control affected together with ABS",
+        "count": 14,
+        "share": 0.27450980392156865
+      },
+      {
+        "mode": "loss_of_braking",
+        "label": "Loss of braking or extended stopping distance",
+        "count": 11,
+        "share": 0.21568627450980393
+      },
+      {
+        "mode": "module_or_hydraulic_unit",
+        "label": "ABS module, pump or hydraulic control unit failure",
+        "count": 5,
+        "share": 0.09803921568627451
+      },
+      {
+        "mode": "unintended_activation",
+        "label": "ABS activation without demand or abnormal pedal pulsation",
+        "count": 1,
+        "share": 0.0196078431372549
+      },
+      {
+        "mode": "electrical_or_software",
+        "label": "Electrical short, wiring, fuse, corrosion or software",
+        "count": 1,
+        "share": 0.0196078431372549
+      }
+    ],
+    "model_years": [
+      [
+        2012,
+        18
+      ],
+      [
+        2013,
+        18
+      ],
+      [
+        2014,
+        11
+      ],
+      [
+        2015,
+        3
+      ],
+      [
+        2016,
+        1
+      ]
+    ],
+    "monthly": [
+      [
+        "2024-02",
+        1
+      ],
+      [
+        "2024-03",
+        2
+      ],
+      [
+        "2024-04",
+        1
+      ],
+      [
+        "2024-05",
+        1
+      ],
+      [
+        "2024-06",
+        3
+      ],
+      [
+        "2024-07",
+        2
+      ],
+      [
+        "2024-08",
+        5
+      ],
+      [
+        "2024-09",
+        4
+      ],
+      [
+        "2024-10",
+        1
+      ],
+      [
+        "2024-11",
+        1
+      ],
+      [
+        "2024-12",
+        0
+      ],
+      [
+        "2025-01",
+        4
+      ],
+      [
+        "2025-02",
+        2
+      ],
+      [
+        "2025-03",
+        1
+      ],
+      [
+        "2025-04",
+        2
+      ],
+      [
+        "2025-05",
+        2
+      ],
+      [
+        "2025-06",
+        3
+      ],
+      [
+        "2025-07",
+        2
+      ],
+      [
+        "2025-08",
+        2
+      ],
+      [
+        "2025-09",
+        4
+      ],
+      [
+        "2025-10",
+        3
+      ],
+      [
+        "2025-11",
+        0
+      ],
+      [
+        "2025-12",
+        3
+      ],
+      [
+        "2026-01",
+        2
+      ]
+    ],
+    "items": [
+      {
+        "cite": "C:11593589",
+        "source": "complaint",
+        "title": "2012 TOYOTA PRIUS V | SERVICE BRAKES",
+        "text": "while driving i lost the power braking on my vehicle and the abs, traction and another exclamtion point symbol came on. my brakes had to be pushed really hard all the way down to the floor board increasing my braking distance.",
+        "date": "2024-06-11",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11655151",
+        "source": "complaint",
+        "title": "2013 TOYOTA PRIUS V | PARKING BRAKE | SERVICE BRAKES, HYDRAULIC",
+        "text": "The contact owns a 2013 Toyota Prius V. The contact stated while driving 35-40 MPH, the ABS, traction control, parking brake, and the malfunction indicator warning lights were illuminated. Additionally, the brake pedal vibrated while being depressed. The vehicle was taken to the dealer, and DTC: C1391 was retrieved. The dealer determined that the brake booster pump assembly and the brake booster assembly needed to ...",
+        "date": "2025-04-17",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11689707",
+        "source": "complaint",
+        "title": "2014 TOYOTA PRIUS V | SERVICE BRAKES",
+        "text": "ease reference Toyota Service Bulletin POL18-03, which addresses issues related to the braking system in certain Toyota models, including the Prius V. This bulletin indicates that various brake system-related warning lamps may illuminate due to internal malfunctions within the brake system, and it outlines affected parts that may require replacement. Additionally, please reference Toyota Customer Support Program ...",
+        "date": "2025-09-25",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11594033",
+        "source": "complaint",
+        "title": "2014 TOYOTA PRIUS V | SERVICE BRAKES",
+        "text": "Completely unannounced and sudden brake failure, which caused a failure in the traction control and ABS system as well. Most likely brake actuator pump failure.",
+        "date": "2024-06-12",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11671770",
+        "source": "complaint",
+        "title": "2015 TOYOTA PRIUS V | SERVICE BRAKES",
+        "text": "Brake light + ABS + traction light came on and the brake became harder to control. I was driving in the rain and briefly lost control. Fortunately, no accident.",
+        "date": "2025-07-07",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11684153",
+        "source": "complaint",
+        "title": "2013 TOYOTA PRIUS V | SERVICE BRAKES",
+        "text": "Prior to issue, noticed a buzzing sound from engine compartment, later known to be the ABS accumulator pump, occurring more frequently - first multiple times when braking, then later continuously while driving. Dashboard eventually lit all brake-related warning lights (\"BRAKE\", TSC, ABS) and brake pedal behavior changed markedly. This occurred after parking in my driveway while engaging the parking brake. Brake ...",
+        "date": "2025-08-31",
+        "role": "retrieved"
+      },
+      {
+        "cite": "C:11597987",
+        "source": "complaint",
+        "title": "2014 TOYOTA PRIUS V | SERVICE BRAKES, HYDRAULIC",
+        "text": "The contact owns a 2014 Toyota Prius V. The contact stated that the vehicle was previously involved in two car crashes, where the vehicle rear-ended other vehicles due to the brakes failure. The air bags did not deploy. A police report was filed after the second crash, but the information was not available. The contact stated that the other driver sustained unknown injuries during the second crash. The vehicle ...",
+        "date": "2024-07-01",
+        "role": "severe outcome"
+      },
+      {
+        "cite": "C:11569297",
+        "source": "complaint",
+        "title": "2012 TOYOTA PRIUS V | SERVICE BRAKES | STEERING | FORWARD COLLISION AVOIDANCE: AUTOMATIC EMERGENCY BRAKING",
+        "text": "8/2/22 My ABS light came on. Took the car to a dealer. They kept it for six weeks and returned it on 10/3/22. No charge and no explanation. 11/7/22 engine light came on. Took in to dealer, they returned it 11/17/22 indicated incorrect air/ fuel mixture. 10/9/23 Traveling 47 mph, came around a mountain and encountered stopped cars. Slammed on the brakes, car did not slow down, steering wheel locked to the right, car ...",
+        "date": "2024-02-01",
+        "role": "severe outcome"
+      },
+      {
+        "cite": "R:21V598",
+        "source": "recall",
+        "title": "Recall 21V598 | BMW | TOYOTA | model years 2019 to 2021",
+        "text": "Dealer Letter: The subject vehicles are manufactured by BMW. According to BMW, the subject vehicles have been equipped with an engine management software that, under certain specific engine start conditions, could damage a component that provides braking power assistance. In this condition, there could be a loss in the brake assist and an increase in stopping distance. This can lead to an increased risk of a crash. ...",
+        "date": "2021-08-07",
+        "role": "related recall, same make"
+      },
+      {
+        "cite": "R:24V708",
+        "source": "recall",
+        "title": "Recall 24V708 | TOYOTA | model years 2023 to 2025",
+        "text": "Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023 - 2025 Model Year Corolla HV Temporary Hard Brake Pedal During Cornering Certain 2023- 2024 Model Year Corolla Cross HV & Certain 2023- 2025 Model Year Corolla HV Temporary Hard Brake Pedal During Cornering SAFETY RECALL 24TA11 (Remedy Notice) Certain 2023- 2024 Model Year Corolla Cross HV Temporary Hard Brake Pedal During Cornering",
+        "date": "2024-09-22",
+        "role": "related recall, same make"
+      },
+      {
+        "cite": "R:22V239",
+        "source": "recall",
+        "title": "Recall 22V239 | LEXUS | TOYOTA | model years 2020 to 2022",
+        "text": "A software error can cause the Vehicle Stability Control system (VSC) not to default to ON the next time the car is started under certain circumstances. This can result in noncompliance with a federal safety requirement. Operating the vehicle with VSC deactivated could increase the risk of a crash in certain driving conditions. A software error can cause the Vehicle Stability Control system (VSC) not to default to ...",
+        "date": "2022-04-02",
+        "role": "related recall, same make"
+      },
+      {
+        "cite": "K:failure_modes.warning_lamp_illumination",
+        "source": "reference",
+        "title": "Warning lamp illumination",
+        "text": "The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on. On its own this indicates that the system detected a fault and disabled itself. The safety relevance depends on what failed and whether base braking is affected. A sustained rise in lamp complaints for one vehicle family is still valuable because it is usually the ...",
+        "date": null,
+        "role": "reference note"
+      },
+      {
+        "cite": "K:abs_fundamentals.fail_safe_behaviour",
+        "source": "reference",
+        "title": "Fail safe behaviour",
+        "text": "When the controller detects a fault it disables antilock control, lights the ABS warning lamp and leaves the base hydraulic brakes working. The vehicle then brakes like a vehicle without ABS, so wheels can lock in a panic stop. Because traction control, electronic stability control and often automatic emergency braking share the same sensors, pump and valves, a single ABS fault commonly disables those functions at ...",
+        "date": null,
+        "role": "reference note"
+      },
+      {
+        "cite": "K:surveillance_methods.known_limits_of_complaint_based_surveillance",
+        "source": "reference",
+        "title": "Known limits of complaint based surveillance",
+        "text": "Complaints are voluntary and unverified. Reporting rises after news coverage or a recall announcement, which is called stimulated reporting. Vehicles with large fleets generate more complaints of every kind, which disproportionality partly corrects for but volume thresholds do not. A statistical signal is a reason for an engineer to read the evidence. It is not a finding that a defect exists.",
+        "date": null,
+        "role": "reference note"
+      }
+    ]
+  }
+}

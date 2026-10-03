@@ -1,0 +1,80 @@
+# SkidSignal brief: CHEVROLET TRAVERSE
+
+| As of | Tier | Priority score | Rank among flagged families | Writer | Guardrails |
+|---|---|---|---|---|---|
+| 2026-01 | emerging | 41.7 | 7 of 27 | extractive | passed |
+
+## 1. Signal summary
+
+CHEVROLET TRAVERSE is on the emerging tier as of 2026-01 with a priority score of 41.7, rank 7 of 27 flagged families [S]. Between 2024-02 and 2026-01, 56 of its 1,128 complaints were ABS related, a share of 5.0 percent against 3.6 percent across all vehicles [S]. The proportional reporting ratio is 1.38 with a 95 percent interval of 1.06 to 1.78, and the lower credibility bound of the information component (IC025) is 0.05 [S]. The most recent 6 months brought 42 ABS complaints against 5.0 expected from the earlier rate, a rate ratio of 8.48 that stays significant after false discovery control (q 0.0000) [S].
+
+## 2. Statistical evidence
+
+Window: 2024-02 to 2026-01 (24 months). All figures are computed by the signal engine.
+
+| Metric | Value | How to read it |
+|---|---|---|
+| ABS related complaints | 56 of 1,128 (5.0%) | Database wide share is 3.6% |
+| Expected ABS complaints | 40.8 | If this family matched the database mix |
+| Proportional reporting ratio | 1.38 (1.06 to 1.78) | Signal criterion: at least 2 |
+| Reporting odds ratio | 1.40 (1.07 to 1.83) | Interval excluding 1 supports an excess |
+| Chi square | 5.5 | Signal criterion: at least 4 |
+| Information component | 0.45 (IC025 0.05) | Signal criterion: IC025 above 0 |
+| Last 6 months | 42 observed, 5.0 expected | Rate ratio 8.48, adjusted q 0.0000 |
+| CUSUM peak | 44.5 | In alarm |
+| Severe outcomes | 1 (1.8%) | 1 crash, 0 fire, 0 injured, 0 deaths |
+
+## 3. Failure mode profile
+
+The most frequent failure mode tag is "ABS or brake warning lamp illuminated" (43 narratives, 76.8 percent), followed by "Stability or traction control affected together with ABS" (43, 76.8 percent) [S]. Complaints concentrate in model years 2025 (47), 2019 (2), 2015 (1) [S]. An owner report for a 2019 CHEVROLET TRAVERSE states: "Car showing that car is not in park and constantly kills battery; Shift to park warning, antilock brake warning, parking brake warning, and forward collision warning" [C:11648846]. An owner report for a 2025 CHEVROLET TRAVERSE states: "On July 16, 2025, with 4,514 miles on the odometer, the dashboard displayed warning messages for “Service ECS” and “Service Brake Assist,” along with illuminated" [C:11702462]. An owner report for a 2025 CHEVROLET TRAVERSE states: "Purchased new 25 Traverse; Driving from AR to OK, stopped at a store, parked car; Upon returning to car, start ignition and red 'BRAKE' light illuminated as well as ABS" [C:11675292]. Reference note "Warning lamp illumination": The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on [K:failure_modes.warning_lamp_illumination].
+
+| Failure mode | Narratives | Share |
+|---|---|---|
+| ABS or brake warning lamp illuminated | 43 | 76.8% |
+| Stability or traction control affected together with ABS | 43 | 76.8% |
+| Loss of braking or extended stopping distance | 12 | 21.4% |
+| Repair part unavailable or on back order | 10 | 17.9% |
+| ABS module, pump or hydraulic control unit failure | 1 | 1.8% |
+| ABS activation without demand or abnormal pedal pulsation | 1 | 1.8% |
+| Wheel speed sensor, tone ring or wiring fault | 1 | 1.8% |
+| Electrical short, wiring, fuse, corrosion or software | 1 | 1.8% |
+
+## 4. Complaint evidence
+
+- **[C:11648846]** 2019 CHEVROLET TRAVERSE | ELECTRICAL SYSTEM | SERVICE BRAKES | FORWARD COLLISION AVOIDANCE: WARNINGS (received 2025-03-17, retrieved): "Car showing that car is not in park and constantly kills battery. Shift to park warning, antilock brake warning, parking brake warning, and forward collision warning continue to come on. Dealer says now partially covered under extended warranty after deductible, but battery needs replacement for $375."
+- **[C:11702462]** 2025 CHEVROLET TRAVERSE | SERVICE BRAKES (received 2025-12-02, retrieved): "On July 16, 2025, with 4,514 miles on the odometer, the dashboard displayed warning messages for “Service ECS” and “Service Brake Assist,” along with illuminated indicators for BRAKE, ABS, and Traction Control. At 4,598 miles, the master cylinder was replaced. However, after installing a new brake master cylinder, power brake booster, and Electronic Brake Control Module, the brakes failed. As a result, an ..."
+- **[C:11675292]** 2025 CHEVROLET TRAVERSE | SERVICE BRAKES | FORWARD COLLISION AVOIDANCE: AUTOMATIC EMERGENCY BRAKING | FORWARD COLLISION AVOIDANCE: WARNINGS (received 2025-07-22, retrieved): "Purchased new 25 Traverse. Driving from AR to OK, stopped at a store, parked car. Upon returning to car, start ignition and red "BRAKE" light illuminated as well as ABS, Traction control and forward collision icons all lit. "Service brake assist, service esc, rear auto brake and park assist unavailable" warnings all show on the dash. Vehicle had 2747 miles at time this occurred. Systems check on dash showed all ..."
+- **[C:11696148]** 2024 CHEVROLET TRAVERSE | SERVICE BRAKES (received 2025-10-28, retrieved): "The contact owns a 2024 Chevrolet Traverse. The contact stated that while depressing the brake pedal, the brakes made a squeaking sound. The ABS warning light was illuminated. The vehicle was taken to the dealer several times. The dealer diagnosed that the brakes had failed and needed to be replaced. The vehicle was repaired; however, the failure persisted. The ABS warning light was no longer illuminated. The ..."
+- **[C:11670205]** 2025 CHEVROLET TRAVERSE | SERVICE BRAKES | FORWARD COLLISION AVOIDANCE: ADAPTIVE CRUISE CONTROL | FORWARD COLLISION AVOIDANCE: AUTOMATIC EMERGENCY BRAKING (received 2025-06-30, retrieved): "Had lights on my dashboard when I turned it on the morning of 6/1/25. Brake light, traction, ABS, and forward collision. Cruise control also stopped working. Brake module needs to be replaced."
+- **[C:11696788]** 2025 CHEVROLET TRAVERSE | SERVICE BRAKES | FORWARD COLLISION AVOIDANCE: WARNINGS | FORWARD COLLISION AVOIDANCE: AUTOMATIC EMERGENCY BRAKING (received 2025-10-31, retrieved): "While driving our 2025 Chevrolet Traverse with 9450 miles at 45 MPH, it suddenly came to a complete stop and would not advance. Eventually after restarting the vehicle it would drive again, but the ABS, collision avoidance, traction control, and emergency braking was disabled. We learned that the "master brake cylinder" failed. This requires a repair and the parts are backordered. Furthermore we learned this is a ..."
+- **[C:11596035]** 2016 CHEVROLET TRAVERSE | SERVICE BRAKES | FORWARD COLLISION AVOIDANCE: AUTOMATIC EMERGENCY BRAKING | ENGINE (received 2024-06-23, severe outcome): "2 issues: 1: Brakes did not stop car nor did the abs braking system kick in causing the car to not stop on full demand! 2 cars slammed on their brakes at a yellow light instead of going thru causing a small number kiss Was going 35mph and when braking, car didn’t fully stop and out brakes tho to the floor. Abs did not kick in. No lights on dash board. 2: The very Next morning, The traction control light came on ..."
+
+## 5. Recalls and context
+
+No ABS related recall campaign for this family appears in the recall file before the as of date [S]. A brake related campaign for the same make, 21V579, states: "21V579 recall; service technicians programmed these vehicles brake system control modules (BSCM) with incorrect calibrations, adversely impacting the operation or sensitivity of certain vehicle" [R:21V579]. A brake related campaign for the same make, 23V017, states: "23V017 N232396500-01 Bulletin 21Feb2023Communication regarding GM # N232396500, 2022 2023 Chevrolet Low Cab Forward Med Duty trucks involved with Isuzu recall 23V017; the ADAS (Advanced Driver" [R:23V017].
+
+- **[R:21V579]** Recall 21V579 | CHEVROLET | GMC | model years 2021 to 2021 (related recall, same make, 2021-07-31): 21V579 recall; service technicians programmed these vehicles brake system control modules (BSCM) with incorrect calibrations, adversely impacting the operation or sensitivity of certain vehicle systems, including electronic stability control, traction control, and anti-lock braking, or trailer braking while towing; owner notification letter 21V579 recall; this condition may adversely impact the operation or ...
+- **[R:23V017]** Recall 23V017 | CHEVROLET | HINO | ISUZU | model years 2022 to 2023 (related recall, same make, 2023-01-08): 23V017 N232396500-01 Bulletin 21Feb2023Communication regarding GM # N232396500, 2022 2023 Chevrolet Low Cab Forward Med Duty trucks involved with Isuzu recall 23V017; the ADAS (Advanced Driver Assistance Systems) camera and ABS (Antilock Brake System) module were not calibrated according to the correct wheelbase; service bulletin is revised to include a copy of the owner notification letter Communication regarding ...
+- **[R:20V603]** Recall 20V603 | CADILLAC | CHEVROLET | GMC | model years 2018 to 2018 (related recall, same make, 2020-09-27): N202300860 recall; mechanical vacuum pump output may decrease over time, decreasing the amount of vacuum/power brake assist; dealer notification that the service bulletin has been revised to include a representative copy of the owner notification letter. N202300860 recall; mechanical vacuum pump output may decrease over time, decreasing the amount of vacuum/power brake assist; service bulletin has been revised to ...
+- **[K:failure_modes.warning_lamp_illumination]** Warning lamp illumination (reference note): The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on. On its own this indicates that the system detected a fault and disabled itself. The safety relevance depends on what failed and whether base braking is affected. A sustained rise in lamp complaints for one vehicle family is still valuable because it is usually the ...
+- **[K:abs_fundamentals.fail_safe_behaviour]** Fail safe behaviour (reference note): When the controller detects a fault it disables antilock control, lights the ABS warning lamp and leaves the base hydraulic brakes working. The vehicle then brakes like a vehicle without ABS, so wheels can lock in a panic stop. Because traction control, electronic stability control and often automatic emergency braking share the same sensors, pump and valves, a single ABS fault commonly disables those functions at ...
+- **[K:surveillance_methods.known_limits_of_complaint_based_surveillance]** Known limits of complaint based surveillance (reference note): Complaints are voluntary and unverified. Reporting rises after news coverage or a recall announcement, which is called stimulated reporting. Vehicles with large fleets generate more complaints of every kind, which disproportionality partly corrects for but volume thresholds do not. A statistical signal is a reason for an engineer to read the evidence. It is not a finding that a defect exists.
+
+## 6. Assessment
+
+The evidence is consistent with a recent rise in ABS related complaints, although ABS issues are not unusually prominent in this family's overall complaint mix [S]. 1 of the 56 ABS complaints involve a crash, fire, injury or death (1 crash, 0 fire, 0 injured, 0 deaths) [S]. The CUSUM chart is in alarm with a peak of 44.5, which points to a sustained shift and not a single unusual month [S]. 17.9 percent of narratives mention unavailable repair parts, so part of the volume may reflect a known problem awaiting remedy and not a new defect [S]. This is a statistical signal built from unverified owner reports and it does not establish that a defect exists [K:surveillance_methods.known_limits_of_complaint_based_surveillance].
+
+## 7. Recommended analyst actions
+
+1. Read the cited narratives in full and confirm the failure mode coding.
+2. Check manufacturer communications and open investigations for this family, since no ABS recall is on file.
+3. Request a build date breakdown for model years 2025, 2019, 2015.
+4. Review the signal again next month and note whether the tier or score has changed.
+
+## 8. Limitations
+
+Complaints are voluntary, unverified owner reports and reporting rises after publicity or a recall. Disproportionality compares complaint mixes and is not a failure rate, because the number of vehicles in service is not in the data. Signals are computed for a vehicle family across all model years, so a problem confined to one model year can be diluted. The brief only uses records received on or before the as of date.
+
+Monthly ABS complaints in the window: 2024-02: 1, 2024-03: 0, 2024-04: 0, 2024-05: 0, 2024-06: 1, 2024-07: 0, 2024-08: 0, 2024-09: 3, 2024-10: 0, 2024-11: 0, 2024-12: 1, 2025-01: 0, 2025-02: 0, 2025-03: 1, 2025-04: 0, 2025-05: 0, 2025-06: 2, 2025-07: 5, 2025-08: 17, 2025-09: 9, 2025-10: 6, 2025-11: 2, 2025-12: 5, 2026-01: 3
+
+Guardrail checks: citation validity 1.00, citation coverage 1.00, numeric fidelity 1.00. Citation keys: S is a computed statistic, C is an owner complaint (ODI number), R is a recall campaign, K is a project reference note.

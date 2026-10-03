@@ -1,0 +1,76 @@
+# SkidSignal brief: LEXUS CT
+
+| As of | Tier | Priority score | Rank among flagged families | Writer | Guardrails |
+|---|---|---|---|---|---|
+| 2026-01 | persistent | 35.6 | 9 of 27 | extractive | passed |
+
+## 1. Signal summary
+
+LEXUS CT is on the persistent tier as of 2026-01 with a priority score of 35.6, rank 9 of 27 flagged families [S]. Between 2024-02 and 2026-01, 18 of its 43 complaints were ABS related, a share of 41.9 percent against 3.6 percent across all vehicles [S]. The proportional reporting ratio is 11.60 with a 95 percent interval of 8.15 to 16.52, and the lower credibility bound of the information component (IC025) is 2.43 [S]. The most recent 6 months brought 6 ABS complaints against 4.2 expected from the earlier rate, a rate ratio of 1.41, which does not meet the surge criterion (q 0.8998) [S].
+
+## 2. Statistical evidence
+
+Window: 2024-02 to 2026-01 (24 months). All figures are computed by the signal engine.
+
+| Metric | Value | How to read it |
+|---|---|---|
+| ABS related complaints | 18 of 43 (41.9%) | Database wide share is 3.6% |
+| Expected ABS complaints | 1.6 | If this family matched the database mix |
+| Proportional reporting ratio | 11.60 (8.15 to 16.52) | Signal criterion: at least 2 |
+| Reporting odds ratio | 19.24 (10.49 to 35.28) | Interval excluding 1 supports an excess |
+| Chi square | 169.5 | Signal criterion: at least 4 |
+| Information component | 3.17 (IC025 2.43) | Signal criterion: IC025 above 0 |
+| Last 6 months | 6 observed, 4.2 expected | Rate ratio 1.41, adjusted q 0.8998 |
+| CUSUM peak | 3.4 | Not in alarm |
+| Severe outcomes | 0 (0.0%) | 0 crash, 0 fire, 0 injured, 0 deaths |
+
+## 3. Failure mode profile
+
+The most frequent failure mode tag is "ABS or brake warning lamp illuminated" (14 narratives, 77.8 percent), followed by "Stability or traction control affected together with ABS" (12, 66.7 percent) [S]. Complaints concentrate in model years 2014 (5), 2013 (4), 2012 (4) [S]. An owner report for a 2012 LEXUS CT states: "f this issue significantly reduces stopping distances; When it occurs, warning lights for ABS, traction control, and brakes illuminate simultaneously; Notably, there are" [C:11630491]. An owner report for a 2013 LEXUS CT states: "The contact owns a 2013 Lexus CT 200H; The contact stated that while driving at an undisclosed speed with the cruise control activated, the brake pedal was depressed and" [C:11689139]. An owner report for a 2014 LEXUS CT states: "I’m reporting a serious safety issue with my 2014 Lexus CT200h involving the brake booster and ABS pump/accumulator system; This issue is well-documented across Lexus" [C:11677841]. Reference note "Warning lamp illumination": The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on [K:failure_modes.warning_lamp_illumination].
+
+| Failure mode | Narratives | Share |
+|---|---|---|
+| ABS or brake warning lamp illuminated | 14 | 77.8% |
+| Stability or traction control affected together with ABS | 12 | 66.7% |
+| Loss of braking or extended stopping distance | 10 | 55.6% |
+| ABS module, pump or hydraulic control unit failure | 3 | 16.7% |
+| ABS activation without demand or abnormal pedal pulsation | 1 | 5.6% |
+
+## 4. Complaint evidence
+
+- **[C:11630491]** 2012 LEXUS CT | SERVICE BRAKES (received 2024-12-13, retrieved): "f this issue significantly reduces stopping distances. When it occurs, warning lights for ABS, traction control, and brakes illuminate simultaneously. Notably, there are no visible brake fluid leaks associated with this actuator. While Toyota provides coverage under the extended warranty, it appears that Lexus may not offer similar support, raising concerns about the safety implications discussed across various ..."
+- **[C:11689139]** 2013 LEXUS CT | SERVICE BRAKES, HYDRAULIC | POWER TRAIN (received 2025-09-23, retrieved): "The contact owns a 2013 Lexus CT 200H. The contact stated that while driving at an undisclosed speed with the cruise control activated, the brake pedal was depressed and the ABS, traction control, and master warning lights illuminated. The message "Check ABS System" was displayed. The cruise control feature then became inoperable. The vehicle was taken to an independent mechanic, who retrieved DTC: C1391, indicating ..."
+- **[C:11677841]** 2014 LEXUS CT | SERVICE BRAKES | ELECTRICAL SYSTEM (received 2025-08-01, retrieved): "I’m reporting a serious safety issue with my 2014 Lexus CT200h involving the brake booster and ABS pump/accumulator system. This issue is well-documented across Lexus CT200h and Toyota Prius V models, which use the same components. Lexus quietly issued a Customer Support Program (CSP) for the affected part but never notified me. I contacted Lexus and was told they “didn’t have to” notify all owners. After ..."
+- **[C:11623648]** 2012 LEXUS CT | SERVICE BRAKES (received 2024-11-05, retrieved): "The actuator will buzz every few seconds trying to keep pressure in the braking system to a safe operating level of gas pressure to no avail due to this leak in the actuator. After it quits buzzing from shutting the car off, you can hear the air leak hissing the pressure away. There is not much stopping distances when and after this suddenly occurs. In the process, the abs, traction control, brake, a yellow ..."
+- **[C:11654277]** 2012 LEXUS CT | SERVICE BRAKES (received 2025-04-12, retrieved): "Brake failure while driving. The brake pedal went soft when pressed and all the associated warning lights illuminated. ABS, traction, control, etc. This is a known issue for Toyota and Lexus, and even after servicing my vehicle at the dealer for the last two years I was never notified that this was a concern."
+- **[C:11570444]** 2015 LEXUS CT | SERVICE BRAKES (received 2024-02-07, retrieved): "Urgent Safety Complaint Regarding Brake System Failure and Manufacturer's Extended Warranty Acknowledgment To Whom It May Concern, I am writing to formally file a complaint concerning a critical safety issue with my vehicle, which has significantly impacted its braking system. This issue not only presents a severe risk to my safety and that of other road users but has also been acknowledged by the manufacturer ..."
+
+## 5. Recalls and context
+
+No ABS related recall campaign for this family appears in the recall file before the as of date [S]. A brake related campaign for the same make, 24V911, states: "Certain bolts may not have been properly tightened during manufacturing and can loosen over time, potentially causing the front brake calipers or front wheels to detach; If this occurs, there can be" [R:24V911]. A brake related campaign for the same make, 22V239, states: "A software error can cause the Vehicle Stability Control system (VSC) not to default to ON the next time the car is started under certain circumstances; This can result in noncompliance with a" [R:22V239].
+
+- **[R:24V911]** Recall 24V911 | LEXUS | TOYOTA | model years 2024 to 2025 (related recall, same make, 2024-12-08): Certain bolts may not have been properly tightened during manufacturing and can loosen over time, potentially causing the front brake calipers or front wheels to detach. If this occurs, there can be an increase in stopping distance or a loss of vehicle control, increasing the risk of crash.
+- **[R:22V239]** Recall 22V239 | LEXUS | TOYOTA | model years 2020 to 2022 (related recall, same make, 2022-04-02): A software error can cause the Vehicle Stability Control system (VSC) not to default to ON the next time the car is started under certain circumstances. This can result in noncompliance with a federal safety requirement. Operating the vehicle with VSC deactivated could increase the risk of a crash in certain driving conditions. A software error can cause the Vehicle Stability Control system (VSC) not to default to ...
+- **[R:22V661]** Recall 22V661 | LEXUS | TOYOTA | model years 2022 to 2022 (related recall, same make, 2022-09-09): The electronic parking brake (EPB) in the subject vehicles may not engage or disengage properly. An EPB that cannot be engaged could be a noncompliance with a federal safety standard and result in vehicle rollaway, increasing the risk of a crash.
+- **[K:failure_modes.warning_lamp_illumination]** Warning lamp illumination (reference note): The most common narrative is that the ABS lamp, often together with the brake, traction control or stability control lamps, came on and stayed on. On its own this indicates that the system detected a fault and disabled itself. The safety relevance depends on what failed and whether base braking is affected. A sustained rise in lamp complaints for one vehicle family is still valuable because it is usually the ...
+- **[K:abs_fundamentals.fail_safe_behaviour]** Fail safe behaviour (reference note): When the controller detects a fault it disables antilock control, lights the ABS warning lamp and leaves the base hydraulic brakes working. The vehicle then brakes like a vehicle without ABS, so wheels can lock in a panic stop. Because traction control, electronic stability control and often automatic emergency braking share the same sensors, pump and valves, a single ABS fault commonly disables those functions at ...
+- **[K:surveillance_methods.known_limits_of_complaint_based_surveillance]** Known limits of complaint based surveillance (reference note): Complaints are voluntary and unverified. Reporting rises after news coverage or a recall announcement, which is called stimulated reporting. Vehicles with large fleets generate more complaints of every kind, which disproportionality partly corrects for but volume thresholds do not. A statistical signal is a reason for an engineer to read the evidence. It is not a finding that a defect exists.
+
+## 6. Assessment
+
+ABS issues are persistently over represented for this family, but the recent rate is not rising faster than its own history [S]. 0 of the 18 ABS complaints involve a crash, fire, injury or death (0 crash, 0 fire, 0 injured, 0 deaths) [S]. This is a statistical signal built from unverified owner reports and it does not establish that a defect exists [K:surveillance_methods.known_limits_of_complaint_based_surveillance].
+
+## 7. Recommended analyst actions
+
+1. Read the cited narratives in full and confirm the failure mode coding.
+2. Check manufacturer communications and open investigations for this family, since no ABS recall is on file.
+3. Request a build date breakdown for model years 2014, 2013, 2012.
+4. Review the signal again next month and note whether the tier or score has changed.
+
+## 8. Limitations
+
+Complaints are voluntary, unverified owner reports and reporting rises after publicity or a recall. Disproportionality compares complaint mixes and is not a failure rate, because the number of vehicles in service is not in the data. Signals are computed for a vehicle family across all model years, so a problem confined to one model year can be diluted. The brief only uses records received on or before the as of date.
+
+Monthly ABS complaints in the window: 2024-02: 3, 2024-03: 0, 2024-04: 1, 2024-05: 0, 2024-06: 1, 2024-07: 0, 2024-08: 0, 2024-09: 1, 2024-10: 1, 2024-11: 1, 2024-12: 1, 2025-01: 0, 2025-02: 1, 2025-03: 0, 2025-04: 2, 2025-05: 0, 2025-06: 0, 2025-07: 0, 2025-08: 3, 2025-09: 1, 2025-10: 2, 2025-11: 0, 2025-12: 0, 2026-01: 0
+
+Guardrail checks: citation validity 1.00, citation coverage 1.00, numeric fidelity 1.00. Citation keys: S is a computed statistic, C is an owner complaint (ODI number), R is a recall campaign, K is a project reference note.
