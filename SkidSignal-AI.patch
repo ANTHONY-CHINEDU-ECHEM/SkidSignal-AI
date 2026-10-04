@@ -1,0 +1,461 @@
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+new file mode 100644
+index 0000000..70f6764
+--- /dev/null
++++ b/.github/workflows/ci.yml
+@@ -0,0 +1,22 @@
++name: CI
++
++on:
++  push:
++    branches: [main]
++  pull_request:
++
++jobs:
++  test:
++    runs-on: ubuntu-latest
++    steps:
++      - uses: actions/checkout@v4
++      - uses: actions/setup-python@v5
++        with:
++          python-version: "3.12"
++          cache: pip
++      - name: Install
++        run: |
++          python -m pip install --upgrade pip
++          pip install -e ".[dev]"
++      - name: Test
++        run: pytest
+diff --git a/README.md b/README.md
+index 4571fa8..f8c5f67 100644
+--- a/README.md
++++ b/README.md
+@@ -4,7 +4,7 @@
+ 
+ SkidSignal AI reads the public complaint and recall files of the United States National Highway Traffic Safety Administration (NHTSA), finds vehicle families whose antilock brake system (ABS) complaints are unusually prominent or rising, and writes a cited analyst brief for each one. Every number in a brief is computed by a statistical engine, every quoted record carries a citation key, and every sentence is checked by guardrails before release.
+ 
+-![System architecture](architecture.png)
++![System architecture](docs/images/architecture.png)
+ 
+ ## Project brief
+ 
+@@ -53,7 +53,7 @@ Three processing decisions matter for the numbers that follow:
+ * **ABS is identified by language as well as by code.** Only 127 of the 12,370 ABS complaints could be found from the component code alone. The rest are filed under generic codes such as service brakes or electrical system and are recognised by an auditable lexicon in `config/abs_taxonomy.yaml`.
+ * **Personal fields are never loaded.** City, partial vehicle identification number, dealer details and operator name are dropped at the parser.
+ 
+-![Corpus overview](corpus_overview.png)
++![Corpus overview](docs/images/corpus_overview.png)
+ 
+ ## How a signal is detected
+ 
+@@ -73,7 +73,7 @@ A family with an active surge channel is placed on the **emerging** tier. A fami
+ 
+ As of January 2026, 27 of 2,937 vehicle families are flagged.
+ 
+-![Signal leaderboard](signal_leaderboard.png)
++![Signal leaderboard](docs/images/signal_leaderboard.png)
+ 
+ <table>
+ <tr><th>Family</th><th>Tier</th><th>ABS share of complaints</th><th>PRR (95% interval)</th><th>Last 6 months, observed against expected</th><th>What owners describe</th></tr>
+@@ -91,13 +91,13 @@ The database wide ABS share in the same window is 3.6 percent. Four observations
+ * **Parts availability is a signal in its own right.** For the Jeep Wrangler, 39.0 percent of ABS narratives say the replacement module cannot be obtained. These are mostly vehicles around ten years old whose owners report that a failed module cannot be replaced, which is a different risk from a new defect and calls for a different response.
+ * **Two channels see different things.** Chevrolet Traverse and GMC Acadia would both be missed by a disproportionality screen, because ABS is a small share of their overall complaint mix. The surge channel catches them: the Traverse went from an expected 5.0 ABS complaints to 42 in six months, almost all from a single new model year.
+ 
+-![Disproportionality map](disproportionality_map.png)
++![Disproportionality map](docs/images/disproportionality_map.png)
+ 
+ ### What owners are describing
+ 
+ Each ABS narrative is tagged against nine failure modes. The heatmap shows how different the problem is from one family to the next, which is exactly what an analyst needs to know before reading individual reports.
+ 
+-![Failure mode heatmap](failure_mode_heatmap.png)
++![Failure mode heatmap](docs/images/failure_mode_heatmap.png)
+ 
+ Unsupervised clustering of the 12,274 indexed ABS narratives was also run as a discovery aid. It recovered some real themes, including a distinct Toyota hybrid brake booster and actuator cluster (796 narratives) and a Ram truck cluster tied to traction and cruise control (2,562 narratives). It also showed its limits: silhouette scores were low (0.11 at the selected six clusters) and one cluster simply captured the writing style of hotlines transcripts (“the contact state”). For that reason the briefs rely on the auditable taxonomy, and the clusters are reported only as supporting analysis in `reports/failure_clusters.csv`.
+ 
+@@ -105,7 +105,7 @@ Unsupervised clustering of the 12,274 indexed ABS narratives was also run as a d
+ 
+ The backtest replays 62 months (December 2020 to January 2026). An alert is the first month a family reaches either tier. Alerts are compared with ABS related vehicle recall campaigns from the 2020 to 2024 recall file. Of 38 such campaigns, 27 fall inside the evaluation period with affected families present in the complaint data, and only 11 of those had at least five ABS complaints before the recall was filed. The other 16 could not have been found by any complaint based method, which is an important finding in itself: most ABS recalls in this period, especially for heavy trucks, buses and motorcycles, were not preceded by a visible complaint trail.
+ 
+-![Backtest](backtest.png)
++![Backtest](docs/images/backtest.png)
+ 
+ <table>
+ <tr><th>Rule</th><th>Detectable recalls alerted in advance</th><th>Median lead</th><th>Mean active alerts per month</th><th>Alerts followed by an ABS recall within 24 months</th></tr>
+@@ -127,13 +127,13 @@ How to read this honestly:
+ * **An alert without a recall is not a false alarm.** Ram 2500 has been on alert since the first replayed month and has no ABS vehicle recall in the file. Those alerts are the analyst work queue.
+ * **The evidence base is small.** Eleven recalls cannot separate methods with statistical confidence. Recall dates are estimated from campaign numbers in this build. The two 33 month leads belong to the 2023 Hyundai and Kia ABS module fire campaigns, whose families were already on alert around earlier campaigns in the same series, so they should not be read as a clean prediction. The full iteration log is in [docs/EVALUATION.md](docs/EVALUATION.md).
+ 
+-![Signal timelines](signal_timelines.png)
++![Signal timelines](docs/images/signal_timelines.png)
+ 
+ ### Retrieval quality
+ 
+ Retrieval was evaluated on an organic benchmark that needs no manual labels. Owners sometimes cite an NHTSA campaign number in their narrative. Each citation is a relevance label written by the complainant. The task is to take the narrative with the campaign number masked and find the cited campaign among all 3,574 campaigns. Campaigns were split so that fusion weights were chosen on 87 development queries and results are reported on 146 held out queries.
+ 
+-![Retrieval benchmark](retrieval_benchmark.png)
++![Retrieval benchmark](docs/images/retrieval_benchmark.png)
+ 
+ <table>
+ <tr><th>Method</th><th>Recall at 1</th><th>Recall at 5</th><th>Recall at 10</th><th>MRR at 10</th></tr>
+diff --git a/abs_taxonomy.yaml b/config/abs_taxonomy.yaml
+similarity index 100%
+rename from abs_taxonomy.yaml
+rename to config/abs_taxonomy.yaml
+diff --git a/settings.yaml b/config/settings.yaml
+similarity index 100%
+rename from settings.yaml
+rename to config/settings.yaml
+diff --git a/COMPLAINTS_RECEIVED_sample.txt b/data/sample/COMPLAINTS_RECEIVED_sample.txt
+similarity index 100%
+rename from COMPLAINTS_RECEIVED_sample.txt
+rename to data/sample/COMPLAINTS_RECEIVED_sample.txt
+diff --git a/RCL_FROM_sample.csv b/data/sample/RCL_FROM_sample.csv
+similarity index 100%
+rename from RCL_FROM_sample.csv
+rename to data/sample/RCL_FROM_sample.csv
+diff --git a/DATA_CARD.md b/docs/DATA_CARD.md
+similarity index 100%
+rename from DATA_CARD.md
+rename to docs/DATA_CARD.md
+diff --git a/EVALUATION.md b/docs/EVALUATION.md
+similarity index 100%
+rename from EVALUATION.md
+rename to docs/EVALUATION.md
+diff --git a/brief_hyundai_palisade.md b/docs/examples/brief_hyundai_palisade.md
+similarity index 100%
+rename from brief_hyundai_palisade.md
+rename to docs/examples/brief_hyundai_palisade.md
+diff --git a/brief_ram_2500.md b/docs/examples/brief_ram_2500.md
+similarity index 100%
+rename from brief_ram_2500.md
+rename to docs/examples/brief_ram_2500.md
+diff --git a/architecture.png b/docs/images/architecture.png
+similarity index 100%
+rename from architecture.png
+rename to docs/images/architecture.png
+diff --git a/backtest.png b/docs/images/backtest.png
+similarity index 100%
+rename from backtest.png
+rename to docs/images/backtest.png
+diff --git a/corpus_overview.png b/docs/images/corpus_overview.png
+similarity index 100%
+rename from corpus_overview.png
+rename to docs/images/corpus_overview.png
+diff --git a/disproportionality_map.png b/docs/images/disproportionality_map.png
+similarity index 100%
+rename from disproportionality_map.png
+rename to docs/images/disproportionality_map.png
+diff --git a/failure_mode_heatmap.png b/docs/images/failure_mode_heatmap.png
+similarity index 100%
+rename from failure_mode_heatmap.png
+rename to docs/images/failure_mode_heatmap.png
+diff --git a/retrieval_benchmark.png b/docs/images/retrieval_benchmark.png
+similarity index 100%
+rename from retrieval_benchmark.png
+rename to docs/images/retrieval_benchmark.png
+diff --git a/signal_leaderboard.png b/docs/images/signal_leaderboard.png
+similarity index 100%
+rename from signal_leaderboard.png
+rename to docs/images/signal_leaderboard.png
+diff --git a/signal_timelines.png b/docs/images/signal_timelines.png
+similarity index 100%
+rename from signal_timelines.png
+rename to docs/images/signal_timelines.png
+diff --git a/abs_fundamentals.md b/knowledge/abs_fundamentals.md
+similarity index 100%
+rename from abs_fundamentals.md
+rename to knowledge/abs_fundamentals.md
+diff --git a/failure_modes.md b/knowledge/failure_modes.md
+similarity index 100%
+rename from failure_modes.md
+rename to knowledge/failure_modes.md
+diff --git a/regulatory_context.md b/knowledge/regulatory_context.md
+similarity index 100%
+rename from regulatory_context.md
+rename to knowledge/regulatory_context.md
+diff --git a/surveillance_methods.md b/knowledge/surveillance_methods.md
+similarity index 100%
+rename from surveillance_methods.md
+rename to knowledge/surveillance_methods.md
+diff --git a/backtest_alerts.csv b/reports/backtest_alerts.csv
+similarity index 100%
+rename from backtest_alerts.csv
+rename to reports/backtest_alerts.csv
+diff --git a/backtest_recalls.csv b/reports/backtest_recalls.csv
+similarity index 100%
+rename from backtest_recalls.csv
+rename to reports/backtest_recalls.csv
+diff --git a/backtest_summary.json b/reports/backtest_summary.json
+similarity index 100%
+rename from backtest_summary.json
+rename to reports/backtest_summary.json
+diff --git a/chevrolet_traverse_2026_01.json b/reports/briefs/chevrolet_traverse_2026_01.json
+similarity index 100%
+rename from chevrolet_traverse_2026_01.json
+rename to reports/briefs/chevrolet_traverse_2026_01.json
+diff --git a/chevrolet_traverse_2026_01.md b/reports/briefs/chevrolet_traverse_2026_01.md
+similarity index 100%
+rename from chevrolet_traverse_2026_01.md
+rename to reports/briefs/chevrolet_traverse_2026_01.md
+diff --git a/hyundai_azera_2026_01.json b/reports/briefs/hyundai_azera_2026_01.json
+similarity index 100%
+rename from hyundai_azera_2026_01.json
+rename to reports/briefs/hyundai_azera_2026_01.json
+diff --git a/hyundai_azera_2026_01.md b/reports/briefs/hyundai_azera_2026_01.md
+similarity index 100%
+rename from hyundai_azera_2026_01.md
+rename to reports/briefs/hyundai_azera_2026_01.md
+diff --git a/hyundai_palisade_2026_01.json b/reports/briefs/hyundai_palisade_2026_01.json
+similarity index 100%
+rename from hyundai_palisade_2026_01.json
+rename to reports/briefs/hyundai_palisade_2026_01.json
+diff --git a/hyundai_palisade_2026_01.md b/reports/briefs/hyundai_palisade_2026_01.md
+similarity index 100%
+rename from hyundai_palisade_2026_01.md
+rename to reports/briefs/hyundai_palisade_2026_01.md
+diff --git a/jeep_wrangler_2026_01.json b/reports/briefs/jeep_wrangler_2026_01.json
+similarity index 100%
+rename from jeep_wrangler_2026_01.json
+rename to reports/briefs/jeep_wrangler_2026_01.json
+diff --git a/jeep_wrangler_2026_01.md b/reports/briefs/jeep_wrangler_2026_01.md
+similarity index 100%
+rename from jeep_wrangler_2026_01.md
+rename to reports/briefs/jeep_wrangler_2026_01.md
+diff --git a/lexus_ct_2026_01.json b/reports/briefs/lexus_ct_2026_01.json
+similarity index 100%
+rename from lexus_ct_2026_01.json
+rename to reports/briefs/lexus_ct_2026_01.json
+diff --git a/lexus_ct_2026_01.md b/reports/briefs/lexus_ct_2026_01.md
+similarity index 100%
+rename from lexus_ct_2026_01.md
+rename to reports/briefs/lexus_ct_2026_01.md
+diff --git a/ram_1500_2026_01.json b/reports/briefs/ram_1500_2026_01.json
+similarity index 100%
+rename from ram_1500_2026_01.json
+rename to reports/briefs/ram_1500_2026_01.json
+diff --git a/ram_1500_2026_01.md b/reports/briefs/ram_1500_2026_01.md
+similarity index 100%
+rename from ram_1500_2026_01.md
+rename to reports/briefs/ram_1500_2026_01.md
+diff --git a/ram_2500_2026_01.json b/reports/briefs/ram_2500_2026_01.json
+similarity index 100%
+rename from ram_2500_2026_01.json
+rename to reports/briefs/ram_2500_2026_01.json
+diff --git a/ram_2500_2026_01.md b/reports/briefs/ram_2500_2026_01.md
+similarity index 100%
+rename from ram_2500_2026_01.md
+rename to reports/briefs/ram_2500_2026_01.md
+diff --git a/ram_3500_2026_01.json b/reports/briefs/ram_3500_2026_01.json
+similarity index 100%
+rename from ram_3500_2026_01.json
+rename to reports/briefs/ram_3500_2026_01.json
+diff --git a/ram_3500_2026_01.md b/reports/briefs/ram_3500_2026_01.md
+similarity index 100%
+rename from ram_3500_2026_01.md
+rename to reports/briefs/ram_3500_2026_01.md
+diff --git a/toyota_prius_2026_01.json b/reports/briefs/toyota_prius_2026_01.json
+similarity index 100%
+rename from toyota_prius_2026_01.json
+rename to reports/briefs/toyota_prius_2026_01.json
+diff --git a/toyota_prius_2026_01.md b/reports/briefs/toyota_prius_2026_01.md
+similarity index 100%
+rename from toyota_prius_2026_01.md
+rename to reports/briefs/toyota_prius_2026_01.md
+diff --git a/toyota_prius_v_2026_01.json b/reports/briefs/toyota_prius_v_2026_01.json
+similarity index 100%
+rename from toyota_prius_v_2026_01.json
+rename to reports/briefs/toyota_prius_v_2026_01.json
+diff --git a/toyota_prius_v_2026_01.md b/reports/briefs/toyota_prius_v_2026_01.md
+similarity index 100%
+rename from toyota_prius_v_2026_01.md
+rename to reports/briefs/toyota_prius_v_2026_01.md
+diff --git a/failure_clusters.csv b/reports/failure_clusters.csv
+similarity index 100%
+rename from failure_clusters.csv
+rename to reports/failure_clusters.csv
+diff --git a/failure_clusters.json b/reports/failure_clusters.json
+similarity index 100%
+rename from failure_clusters.json
+rename to reports/failure_clusters.json
+diff --git a/guardrail_eval.json b/reports/guardrail_eval.json
+similarity index 100%
+rename from guardrail_eval.json
+rename to reports/guardrail_eval.json
+diff --git a/retrieval_benchmark.json b/reports/retrieval_benchmark.json
+similarity index 100%
+rename from retrieval_benchmark.json
+rename to reports/retrieval_benchmark.json
+diff --git a/signals_latest.csv b/reports/signals_latest.csv
+similarity index 100%
+rename from signals_latest.csv
+rename to reports/signals_latest.csv
+diff --git a/src/skidsignal/__init__.py b/src/skidsignal/__init__.py
+new file mode 100644
+index 0000000..c1a6b87
+--- /dev/null
++++ b/src/skidsignal/__init__.py
+@@ -0,0 +1,3 @@
++"""SkidSignal AI: emerging antilock brake defect surveillance."""
++
++__version__ = "1.0.0"
+diff --git a/__init__.py b/src/skidsignal/analysis/__init__.py
+similarity index 100%
+rename from __init__.py
+rename to src/skidsignal/analysis/__init__.py
+diff --git a/failure_modes.py b/src/skidsignal/analysis/failure_modes.py
+similarity index 100%
+rename from failure_modes.py
+rename to src/skidsignal/analysis/failure_modes.py
+diff --git a/src/skidsignal/api/__init__.py b/src/skidsignal/api/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/app.py b/src/skidsignal/api/app.py
+similarity index 100%
+rename from app.py
+rename to src/skidsignal/api/app.py
+diff --git a/cli.py b/src/skidsignal/cli.py
+similarity index 100%
+rename from cli.py
+rename to src/skidsignal/cli.py
+diff --git a/config.py b/src/skidsignal/config.py
+similarity index 100%
+rename from config.py
+rename to src/skidsignal/config.py
+diff --git a/engine.py b/src/skidsignal/engine.py
+similarity index 100%
+rename from engine.py
+rename to src/skidsignal/engine.py
+diff --git a/src/skidsignal/evaluation/__init__.py b/src/skidsignal/evaluation/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/guardrail_eval.py b/src/skidsignal/evaluation/guardrail_eval.py
+similarity index 100%
+rename from guardrail_eval.py
+rename to src/skidsignal/evaluation/guardrail_eval.py
+diff --git a/retrieval_eval.py b/src/skidsignal/evaluation/retrieval_eval.py
+similarity index 100%
+rename from retrieval_eval.py
+rename to src/skidsignal/evaluation/retrieval_eval.py
+diff --git a/src/skidsignal/index/__init__.py b/src/skidsignal/index/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/bm25.py b/src/skidsignal/index/bm25.py
+similarity index 100%
+rename from bm25.py
+rename to src/skidsignal/index/bm25.py
+diff --git a/embeddings.py b/src/skidsignal/index/embeddings.py
+similarity index 100%
+rename from embeddings.py
+rename to src/skidsignal/index/embeddings.py
+diff --git a/store.py b/src/skidsignal/index/store.py
+similarity index 100%
+rename from store.py
+rename to src/skidsignal/index/store.py
+diff --git a/text.py b/src/skidsignal/index/text.py
+similarity index 100%
+rename from text.py
+rename to src/skidsignal/index/text.py
+diff --git a/src/skidsignal/ingestion/__init__.py b/src/skidsignal/ingestion/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/download.py b/src/skidsignal/ingestion/download.py
+similarity index 100%
+rename from download.py
+rename to src/skidsignal/ingestion/download.py
+diff --git a/parsers.py b/src/skidsignal/ingestion/parsers.py
+similarity index 100%
+rename from parsers.py
+rename to src/skidsignal/ingestion/parsers.py
+diff --git a/src/skidsignal/processing/__init__.py b/src/skidsignal/processing/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/corpus.py b/src/skidsignal/processing/corpus.py
+similarity index 100%
+rename from corpus.py
+rename to src/skidsignal/processing/corpus.py
+diff --git a/normalise.py b/src/skidsignal/processing/normalise.py
+similarity index 100%
+rename from normalise.py
+rename to src/skidsignal/processing/normalise.py
+diff --git a/pipeline.py b/src/skidsignal/processing/pipeline.py
+similarity index 100%
+rename from pipeline.py
+rename to src/skidsignal/processing/pipeline.py
+diff --git a/taxonomy.py b/src/skidsignal/processing/taxonomy.py
+similarity index 100%
+rename from taxonomy.py
+rename to src/skidsignal/processing/taxonomy.py
+diff --git a/src/skidsignal/rag/__init__.py b/src/skidsignal/rag/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/brief.py b/src/skidsignal/rag/brief.py
+similarity index 100%
+rename from brief.py
+rename to src/skidsignal/rag/brief.py
+diff --git a/evidence.py b/src/skidsignal/rag/evidence.py
+similarity index 100%
+rename from evidence.py
+rename to src/skidsignal/rag/evidence.py
+diff --git a/guardrails.py b/src/skidsignal/rag/guardrails.py
+similarity index 100%
+rename from guardrails.py
+rename to src/skidsignal/rag/guardrails.py
+diff --git a/llm.py b/src/skidsignal/rag/llm.py
+similarity index 100%
+rename from llm.py
+rename to src/skidsignal/rag/llm.py
+diff --git a/prompts.py b/src/skidsignal/rag/prompts.py
+similarity index 100%
+rename from prompts.py
+rename to src/skidsignal/rag/prompts.py
+diff --git a/qa.py b/src/skidsignal/rag/qa.py
+similarity index 100%
+rename from qa.py
+rename to src/skidsignal/rag/qa.py
+diff --git a/src/skidsignal/signals/__init__.py b/src/skidsignal/signals/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/backtest.py b/src/skidsignal/signals/backtest.py
+similarity index 100%
+rename from backtest.py
+rename to src/skidsignal/signals/backtest.py
+diff --git a/detector.py b/src/skidsignal/signals/detector.py
+similarity index 100%
+rename from detector.py
+rename to src/skidsignal/signals/detector.py
+diff --git a/disproportionality.py b/src/skidsignal/signals/disproportionality.py
+similarity index 100%
+rename from disproportionality.py
+rename to src/skidsignal/signals/disproportionality.py
+diff --git a/temporal.py b/src/skidsignal/signals/temporal.py
+similarity index 100%
+rename from temporal.py
+rename to src/skidsignal/signals/temporal.py
+diff --git a/src/skidsignal/viz/__init__.py b/src/skidsignal/viz/__init__.py
+new file mode 100644
+index 0000000..e69de29
+diff --git a/figures.py b/src/skidsignal/viz/figures.py
+similarity index 100%
+rename from figures.py
+rename to src/skidsignal/viz/figures.py
+diff --git a/conftest.py b/tests/conftest.py
+similarity index 100%
+rename from conftest.py
+rename to tests/conftest.py
+diff --git a/test_end_to_end.py b/tests/test_end_to_end.py
+similarity index 100%
+rename from test_end_to_end.py
+rename to tests/test_end_to_end.py
+diff --git a/test_processing.py b/tests/test_processing.py
+similarity index 100%
+rename from test_processing.py
+rename to tests/test_processing.py
+diff --git a/test_retrieval.py b/tests/test_retrieval.py
+similarity index 100%
+rename from test_retrieval.py
+rename to tests/test_retrieval.py
+diff --git a/test_statistics.py b/tests/test_statistics.py
+similarity index 100%
+rename from test_statistics.py
+rename to tests/test_statistics.py
